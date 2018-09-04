@@ -1,0 +1,1537 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.8 单点登录 · HAP Developer Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lock.html" />
+    
+    
+    <link rel="prev" href="user-security-strategy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    GitBook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="changes-35.html">
+            
+                <a href="changes-35.html">
+            
+                    
+                    3.5更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="changes-31.html">
+            
+                <a href="changes-31.html">
+            
+                    
+                    3.1更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="changes-30.html">
+            
+                <a href="changes-30.html">
+            
+                    
+                    3.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changes-20.html">
+            
+                <a href="changes-20.html">
+            
+                    
+                    2.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="change-20-tables.html">
+            
+                <a href="change-20-tables.html">
+            
+                    
+                    2.0表结构变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                <a href="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                    
+                    I. 开发环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="git-guide.html">
+            
+                <a href="git-guide.html">
+            
+                    
+                    1.1 Git 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    1.2 Maven 使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="system-requirements.html">
+            
+                <a href="system-requirements.html">
+            
+                    
+                    1.3 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="database-init.html">
+            
+                <a href="database-init.html">
+            
+                    
+                    1.4 创建数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="database-config.html">
+            
+                <a href="database-config.html">
+            
+                    
+                    1.5 MySql, Oracle, SQL Server 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="project-create.html">
+            
+                <a href="project-create.html">
+            
+                    
+                    1.6 新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="project-update.html">
+            
+                <a href="project-update.html">
+            
+                    
+                    1.7 更新项目的HAP依赖版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="liquibase-use.html">
+            
+                <a href="liquibase-use.html">
+            
+                    
+                    1.8 Liquibase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="multi-data-source.html">
+            
+                <a href="multi-data-source.html">
+            
+                    
+                    1.9 多数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                <a href="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                    
+                    II. 项目开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="backend-dev_principle.html">
+            
+                <a href="backend-dev_principle.html">
+            
+                    
+                    2.1 项目开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="code-guide/front-code-guide.html">
+            
+                <a href="code-guide/front-code-guide.html">
+            
+                    
+                    2.2 前端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="code-guide/back-code-guide.html">
+            
+                <a href="code-guide/back-code-guide.html">
+            
+                    
+                    2.3 后端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="checkstyle.html">
+            
+                <a href="checkstyle.html">
+            
+                    
+                    2.4 Checkstyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="iii-hou-duan-kai-fa.html">
+            
+                <a href="iii-hou-duan-kai-fa.html">
+            
+                    
+                    III. 后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="security-cas.html">
+            
+                <a href="security-cas.html">
+            
+                    
+                    3.1 CAS 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ldap-config.html">
+            
+                <a href="ldap-config.html">
+            
+                    
+                    3.2 LDAP 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ldap-server.html">
+            
+                <a href="ldap-server.html">
+            
+                    
+                    3.3 LDAP 服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.4 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    3.5 消息机制  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    3.6 配置维护  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="user-security-strategy.html">
+            
+                <a href="user-security-strategy.html">
+            
+                    
+                    3.7 用户安全策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.8" data-path="sso-describe.html">
+            
+                <a href="sso-describe.html">
+            
+                    
+                    3.8 单点登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    3.9 锁机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="audit.html">
+            
+                <a href="audit.html">
+            
+                    
+                    3.10 审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="multi-language.html">
+            
+                <a href="multi-language.html">
+            
+                    
+                    3.11 数据多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    3.12 MyBatis 使用手册  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="mybatis2.html">
+            
+                <a href="mybatis2.html">
+            
+                    
+                    3.13 MyBatis 注意事项  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="elk.html">
+            
+                <a href="elk.html">
+            
+                    
+                    3.14 日志管理 ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="code-generator.html">
+            
+                <a href="code-generator.html">
+            
+                    
+                    3.15 代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    3.16 防止 CSRF 攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="dev-flow.html">
+            
+                <a href="dev-flow.html">
+            
+                    
+                    3.17 开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.18 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="activiti.html">
+            
+                <a href="activiti.html">
+            
+                    
+                    3.19 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="activiti-demo-vacation.html">
+            
+                <a href="activiti-demo-vacation.html">
+            
+                    
+                    3.19.1 工作流demo-请假申请
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    3.20 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="excel.html">
+            
+                <a href="excel.html">
+            
+                    
+                    3.21 EXCEL导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="sys-resource-item.html">
+            
+                <a href="sys-resource-item.html">
+            
+                    
+                    3.22 权限组件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="3.24-cors.html">
+            
+                <a href="3.24-cors.html">
+            
+                    
+                    3.23 跨域访问（CORS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.25" data-path="flex-field.html">
+            
+                <a href="flex-field.html">
+            
+                    
+                    3.24 弹性域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.26" data-path="code-rule.html">
+            
+                <a href="code-rule.html">
+            
+                    
+                    3.25 编码规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.27" data-path="data-permission.html">
+            
+                <a href="data-permission.html">
+            
+                    
+                    3.26 数据屏蔽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.28" data-path="mongodb-integration.html">
+            
+                <a href="mongodb-integration.html">
+            
+                    
+                    3.27 MongoDB 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.29" data-path="sys-report.html">
+            
+                <a href="sys-report.html">
+            
+                    
+                    3.28 报表管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.30" data-path="api-server-manager.html">
+            
+                <a href="api-server-manager.html">
+            
+                    
+                    3.29 服务治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.31" data-path="task-manage.html">
+            
+                <a href="task-manage.html">
+            
+                    
+                    3.30 任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="iv-qian-duan-kai-fa.html">
+            
+                <a href="iv-qian-duan-kai-fa.html">
+            
+                    
+                    IV. 前端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="front-ligerui.html">
+            
+                <a href="front-ligerui.html">
+            
+                    
+                    4.0 前端开发说明 (1.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="front-kendoui.html">
+            
+                <a href="front-kendoui.html">
+            
+                    
+                    4.1 前端开发说明 (2.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="kendo-form.html">
+            
+                <a href="kendo-form.html">
+            
+                    
+                    4.2 kendoUI Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="kendo-grid.html">
+            
+                <a href="kendo-grid.html">
+            
+                    
+                    4.3 kendoUI Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="kendo-lov.html">
+            
+                <a href="kendo-lov.html">
+            
+                    
+                    4.4 kendoUI Lov
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="kendo-upload.html">
+            
+                <a href="kendo-upload.html">
+            
+                    
+                    4.5 kendoUI Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="kendo-validator.html">
+            
+                <a href="kendo-validator.html">
+            
+                    
+                    4.6 kendoUI Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" >
+            
+                <span>
+            
+                    
+                    4.7 标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.8.1" data-path="kendo-tag-button.html">
+            
+                <a href="kendo-tag-button.html">
+            
+                    
+                    4.7.1 Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.2" data-path="kendo-tag-checkbox.html">
+            
+                <a href="kendo-tag-checkbox.html">
+            
+                    
+                    4.7.2 CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.3" data-path="kendo-tag-combobox.html">
+            
+                <a href="kendo-tag-combobox.html">
+            
+                    
+                    4.7.3 ComboBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.4" data-path="kendo-tag-dataSource.html">
+            
+                <a href="kendo-tag-dataSource.html">
+            
+                    
+                    4.7.4 DataSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.5" data-path="kendo-tag-datePicker.html">
+            
+                <a href="kendo-tag-datePicker.html">
+            
+                    
+                    4.7.5 DatePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.6" data-path="kendo-tag-dateTimePicker.html">
+            
+                <a href="kendo-tag-dateTimePicker.html">
+            
+                    
+                    4.7.6 DateTimePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.7" data-path="kendo-tag-dropDownList.html">
+            
+                <a href="kendo-tag-dropDownList.html">
+            
+                    
+                    4.7.7 DropDownList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.8" data-path="kendo-tag-grid.html">
+            
+                <a href="kendo-tag-grid.html">
+            
+                    
+                    4.7.8 Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.9" data-path="kendo-tag-lov.html">
+            
+                <a href="kendo-tag-lov.html">
+            
+                    
+                    4.7.9 LOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.10" data-path="kendo-tag-maskedTextBox.html">
+            
+                <a href="kendo-tag-maskedTextBox.html">
+            
+                    
+                    4.7.10 MaskedTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.11" data-path="kendo-tag-numbericTextBox.html">
+            
+                <a href="kendo-tag-numbericTextBox.html">
+            
+                    
+                    4.7.11 NumbericTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.12" data-path="kendo-tag-queryPanel.html">
+            
+                <a href="kendo-tag-queryPanel.html">
+            
+                    
+                    4.7.12 QueryPanel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.13" data-path="kendo-tag-radio.html">
+            
+                <a href="kendo-tag-radio.html">
+            
+                    
+                    4.7.13 Radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.14" data-path="kendo-tag-tabStrip.html">
+            
+                <a href="kendo-tag-tabStrip.html">
+            
+                    
+                    4.7.14 TabStrip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.15" data-path="kendo-tag-tlEdit.html">
+            
+                <a href="kendo-tag-tlEdit.html">
+            
+                    
+                    4.7.15 TLEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.16" data-path="kendo-tag-treeList.html">
+            
+                <a href="kendo-tag-treeList.html">
+            
+                    
+                    4.7.16 TreeList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.17" data-path="kendo-tag-treeView.html">
+            
+                <a href="kendo-tag-treeView.html">
+            
+                    
+                    4.7.17 TreeView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="kendo-tag-merge.html">
+            
+                <a href="kendo-tag-merge.html">
+            
+                    
+                    4.8 标签合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="ui-builder.html">
+            
+                <a href="ui-builder.html">
+            
+                    
+                    4.9 表单设计器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    [V. 框架功能描述]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="sys-user.html">
+            
+                <a href="sys-user.html">
+            
+                    
+                    5.1 用户管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="if-manage-introduce.html">
+            
+                <a href="if-manage-introduce.html">
+            
+                    
+                    5.2 接口管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="sys-job.html">
+            
+                <a href="sys-job.html">
+            
+                    
+                    5.3 计划任务功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="activiti-helper.html">
+            
+                <a href="activiti-helper.html">
+            
+                    
+                    5.4 工作流功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.8 单点登录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5355;&#x70B9;&#x767B;&#x5F55;">&#x5355;&#x70B9;&#x767B;&#x5F55;</h1>
+<p>&#x53C2;&#x7167; <a href="chapter2.1.md">CAS&#x96C6;&#x6210;</a>&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x5355;&#x70B9;&#x767B;&#x5F55;&#x3002;</p>
+<p>Hap&#x76EE;&#x524D;&#x652F;&#x6301;&#x5355;&#x70B9;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8F6C;&#x81F3;&#x767B;&#x5F55;&#x524D;&#x7684;URL&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;-&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x9875;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x9879;---&#x767B;&#x5F55;&#x6210;&#x529F;&#x8DF3;&#x8F6C;URL&#x3002;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E3A;/index&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x81F3;&#x767B;&#x5F55;&#x524D;&#x7684;URL&#xFF0C;&#x5982;&#x679C;&#x6539;&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5176;&#x4ED6;&#x9875;&#x9762;&#xFF0C;&#x5219;&#x4F1A;&#x5E26;&#x4E0A;?targetUrl=xxx&#x53C2;&#x6570;&#x5148;&#x8DF3;&#x8F6C;&#x81F3;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x7684;URL&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x5904;&#x7406;&#x8DF3;&#x8F6C;&#x3002;</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x914D;&#x7F6E;CAS&#x548C;&#x6807;&#x51C6;&#x767B;&#x5F55;&#x5E76;&#x5B58;&#xFF0C;&#x9ED8;&#x8BA4;&#x767B;&#x5F55;&#x9875;&#x9762;&#x4E3A;SSO&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x8BBF;&#x95EE;/login&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x6807;&#x51C6;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;&#x53EF;&#x4EE5;&#x53C2;&#x7167;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
+<p>&#x4FEE;&#x6539;spring/casSecurity.xml</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- &#x6B64;&#x6587;&#x4EF6;&#x7528;&#x4E8E;CAS sso&#x767B;&#x5F55;&#x65B9;&#x5F0F; --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">beans:beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/security&quot;</span>
+             <span class="hljs-attr">xmlns:beans</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+             <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+             <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+                                 http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- CAS &#x57FA;&#x672C;&#x5C5E;&#x6027;&#x914D;&#x7F6E;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;serviceProperties&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.cas.ServiceProperties&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;service&quot;</span>
+                  <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${cas.service}&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;sendRenew&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;false&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- CAS &#x8BA4;&#x8BC1;&#x914D;&#x7F6E; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">http</span>  <span class="hljs-attr">entry-point-ref</span>=<span class="hljs-string">&quot;casEntryPoint&quot;</span> <span class="hljs-attr">access-decision-manager-ref</span>=<span class="hljs-string">&quot;accessDecisionManager&quot;</span> <span class="hljs-attr">create-session</span>=<span class="hljs-string">&quot;never&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">csrf</span> <span class="hljs-attr">request-matcher-ref</span>=<span class="hljs-string">&quot;csrfCasSecurityRequestMatcher&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/resources/**&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/lib/**&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/common/**&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/login&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/login.html&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/verifiCode&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/websocket/**&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;permitAll&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intercept-url</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">&quot;/**&quot;</span> <span class="hljs-attr">access</span>=<span class="hljs-string">&quot;hasRole(&apos;ROLE_USER&apos;)&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">access-denied-handler</span> <span class="hljs-attr">error-page</span>=<span class="hljs-string">&quot;/access-denied&quot;</span>/&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">form-login</span> <span class="hljs-attr">login-page</span>=<span class="hljs-string">&apos;/login&apos;</span> <span class="hljs-attr">authentication-success-handler-ref</span>=<span class="hljs-string">&quot;successHandler&quot;</span>
+                    <span class="hljs-attr">authentication-failure-handler-ref</span>=<span class="hljs-string">&quot;loginFailureHandler&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!--authentication-failure-url=&quot;/login?error=true&quot;/&gt;--&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x9A8C;&#x8BC1;&#x7801;&#x62E6;&#x622A;&#x5668; --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">custom-filter</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;captchaVerifierFilter&quot;</span> <span class="hljs-attr">before</span>=<span class="hljs-string">&quot;FORM_LOGIN_FILTER&quot;</span>/&gt;</span>
+
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">custom-filter</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;requestSingleLogoutFilter&quot;</span> <span class="hljs-attr">before</span>=<span class="hljs-string">&quot;LOGOUT_FILTER&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">custom-filter</span> <span class="hljs-attr">position</span>=<span class="hljs-string">&quot;CAS_FILTER&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;casFilter&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">custom-filter</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;singleLogoutFilter&quot;</span> <span class="hljs-attr">before</span>=<span class="hljs-string">&quot;CAS_FILTER&quot;</span>/&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">headers</span> <span class="hljs-attr">defaults-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">cache-control</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">headers</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">http</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x8BA4;&#x8BC1;&#x7BA1;&#x7406;&#x5668;,&#x786E;&#x5B9A;&#x7528;&#x6237;,&#x89D2;&#x8272;&#x53CA;&#x76F8;&#x5E94;&#x7684;&#x6743;&#x9650; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;accessDecisionManager&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.access.vote.UnanimousBased&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x6295;&#x7968;&#x5668; --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:constructor-arg</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">beans:list</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.PermissionVoter&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.web.access.expression.WebExpressionVoter&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.access.vote.RoleVoter&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.access.vote.AuthenticatedVoter&quot;</span>/&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">beans:list</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">beans:constructor-arg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+
+    <span class="hljs-comment">&lt;!-- CAS Filter &#x914D;&#x7F6E; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;casFilter&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.cas.web.CasAuthenticationFilter&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;authenticationManager&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;authenticationManager&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;authenticationSuccessHandler&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;successHandler&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;successHandler&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.CustomAuthenticationSuccessHandler&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;defaultTargetUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;/index&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;casEntryPoint&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.cas.web.CasAuthenticationEntryPoint&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;loginUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${cas.ssoserver.loginurl}&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;serviceProperties&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;serviceProperties&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">authentication-manager</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">&quot;authenticationManager&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">authentication-provider</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;casAuthenticationProvider&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">authentication-provider</span> <span class="hljs-attr">user-service-ref</span>=<span class="hljs-string">&quot;customUserDetailsService&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">password-encoder</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;passwordManager&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">authentication-provider</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">authentication-manager</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;casAuthenticationProvider&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.cas.authentication.CasAuthenticationProvider&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;serviceProperties&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;serviceProperties&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;authenticationUserDetailsService&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;customAuthenticationUserDetailsService&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ticketValidator&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.jasig.cas.client.validation.Cas20ServiceTicketValidator&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:constructor-arg</span> <span class="hljs-attr">index</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${cas.ssoserver.url}&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">beans:property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;key&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;an_id_for_this_auth_provider_only&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customAuthenticationUserDetailsService&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.CustomAuthenticationUserDetailsService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;singleLogoutFilter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.jasig.cas.client.session.SingleSignOutFilter&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!-- This filter redirects to the CAS Server to signal Single Logout should be performed --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;requestSingleLogoutFilter&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.web.authentication.logout.LogoutFilter&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:constructor-arg</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${cas.ssoserver.logouturl}&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:constructor-arg</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">beans:constructor-arg</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;filterProcessesUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;/logout&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;csrfCasSecurityRequestMatcher&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.CsrfSecurityRequestMatcher&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;excludeUrls&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">beans:list</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:value</span>&gt;</span>/login<span class="hljs-tag">&lt;/<span class="hljs-name">beans:value</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">beans:value</span>&gt;</span>/websocket/**<span class="hljs-tag">&lt;/<span class="hljs-name">beans:value</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">beans:list</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">beans:property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;captchaVerifierFilter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.CaptchaVerifierFilter&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">beans:property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;captchaField&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;verifiCode&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">beans:bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;loginFailureHandler&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.hand.hap.security.LoginFailureHandler&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans:beans</span>&gt;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="user-security-strategy.html" class="navigation navigation-prev " aria-label="Previous page: 3.7 用户安全策略">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lock.html" class="navigation navigation-next " aria-label="Next page: 3.9 锁机制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.8 单点登录","level":"2.3.8","depth":2,"next":{"title":"3.9 锁机制","level":"2.3.9","depth":2,"path":"lock.md","ref":"lock.md","articles":[]},"previous":{"title":"3.7 用户安全策略","level":"2.3.7","depth":2,"path":"user-security-strategy.md","ref":"user-security-strategy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"family":"Microsoft YaHei","size":1},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Microsoft YaHei","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"HAP Developer Guide","gitbook":"*","description":"HAP Developer Guide"},"file":{"path":"sso-describe.md","mtime":"2018-09-04T07:28:33.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T10:57:11.176Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

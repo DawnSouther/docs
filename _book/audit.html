@@ -1,0 +1,1747 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.10 审计 · HAP Developer Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="multi-language.html" />
+    
+    
+    <link rel="prev" href="lock.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    GitBook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="changes-35.html">
+            
+                <a href="changes-35.html">
+            
+                    
+                    3.5更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="changes-31.html">
+            
+                <a href="changes-31.html">
+            
+                    
+                    3.1更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="changes-30.html">
+            
+                <a href="changes-30.html">
+            
+                    
+                    3.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changes-20.html">
+            
+                <a href="changes-20.html">
+            
+                    
+                    2.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="change-20-tables.html">
+            
+                <a href="change-20-tables.html">
+            
+                    
+                    2.0表结构变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                <a href="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                    
+                    I. 开发环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="git-guide.html">
+            
+                <a href="git-guide.html">
+            
+                    
+                    1.1 Git 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    1.2 Maven 使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="system-requirements.html">
+            
+                <a href="system-requirements.html">
+            
+                    
+                    1.3 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="database-init.html">
+            
+                <a href="database-init.html">
+            
+                    
+                    1.4 创建数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="database-config.html">
+            
+                <a href="database-config.html">
+            
+                    
+                    1.5 MySql, Oracle, SQL Server 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="project-create.html">
+            
+                <a href="project-create.html">
+            
+                    
+                    1.6 新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="project-update.html">
+            
+                <a href="project-update.html">
+            
+                    
+                    1.7 更新项目的HAP依赖版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="liquibase-use.html">
+            
+                <a href="liquibase-use.html">
+            
+                    
+                    1.8 Liquibase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="multi-data-source.html">
+            
+                <a href="multi-data-source.html">
+            
+                    
+                    1.9 多数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                <a href="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                    
+                    II. 项目开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="backend-dev_principle.html">
+            
+                <a href="backend-dev_principle.html">
+            
+                    
+                    2.1 项目开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="code-guide/front-code-guide.html">
+            
+                <a href="code-guide/front-code-guide.html">
+            
+                    
+                    2.2 前端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="code-guide/back-code-guide.html">
+            
+                <a href="code-guide/back-code-guide.html">
+            
+                    
+                    2.3 后端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="checkstyle.html">
+            
+                <a href="checkstyle.html">
+            
+                    
+                    2.4 Checkstyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="iii-hou-duan-kai-fa.html">
+            
+                <a href="iii-hou-duan-kai-fa.html">
+            
+                    
+                    III. 后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="security-cas.html">
+            
+                <a href="security-cas.html">
+            
+                    
+                    3.1 CAS 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ldap-config.html">
+            
+                <a href="ldap-config.html">
+            
+                    
+                    3.2 LDAP 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ldap-server.html">
+            
+                <a href="ldap-server.html">
+            
+                    
+                    3.3 LDAP 服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.4 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    3.5 消息机制  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    3.6 配置维护  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="user-security-strategy.html">
+            
+                <a href="user-security-strategy.html">
+            
+                    
+                    3.7 用户安全策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="sso-describe.html">
+            
+                <a href="sso-describe.html">
+            
+                    
+                    3.8 单点登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    3.9 锁机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.10" data-path="audit.html">
+            
+                <a href="audit.html">
+            
+                    
+                    3.10 审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="multi-language.html">
+            
+                <a href="multi-language.html">
+            
+                    
+                    3.11 数据多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    3.12 MyBatis 使用手册  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="mybatis2.html">
+            
+                <a href="mybatis2.html">
+            
+                    
+                    3.13 MyBatis 注意事项  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="elk.html">
+            
+                <a href="elk.html">
+            
+                    
+                    3.14 日志管理 ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="code-generator.html">
+            
+                <a href="code-generator.html">
+            
+                    
+                    3.15 代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    3.16 防止 CSRF 攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="dev-flow.html">
+            
+                <a href="dev-flow.html">
+            
+                    
+                    3.17 开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.18 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="activiti.html">
+            
+                <a href="activiti.html">
+            
+                    
+                    3.19 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="activiti-demo-vacation.html">
+            
+                <a href="activiti-demo-vacation.html">
+            
+                    
+                    3.19.1 工作流demo-请假申请
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    3.20 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="excel.html">
+            
+                <a href="excel.html">
+            
+                    
+                    3.21 EXCEL导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="sys-resource-item.html">
+            
+                <a href="sys-resource-item.html">
+            
+                    
+                    3.22 权限组件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="3.24-cors.html">
+            
+                <a href="3.24-cors.html">
+            
+                    
+                    3.23 跨域访问（CORS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.25" data-path="flex-field.html">
+            
+                <a href="flex-field.html">
+            
+                    
+                    3.24 弹性域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.26" data-path="code-rule.html">
+            
+                <a href="code-rule.html">
+            
+                    
+                    3.25 编码规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.27" data-path="data-permission.html">
+            
+                <a href="data-permission.html">
+            
+                    
+                    3.26 数据屏蔽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.28" data-path="mongodb-integration.html">
+            
+                <a href="mongodb-integration.html">
+            
+                    
+                    3.27 MongoDB 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.29" data-path="sys-report.html">
+            
+                <a href="sys-report.html">
+            
+                    
+                    3.28 报表管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.30" data-path="api-server-manager.html">
+            
+                <a href="api-server-manager.html">
+            
+                    
+                    3.29 服务治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.31" data-path="task-manage.html">
+            
+                <a href="task-manage.html">
+            
+                    
+                    3.30 任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="iv-qian-duan-kai-fa.html">
+            
+                <a href="iv-qian-duan-kai-fa.html">
+            
+                    
+                    IV. 前端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="front-ligerui.html">
+            
+                <a href="front-ligerui.html">
+            
+                    
+                    4.0 前端开发说明 (1.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="front-kendoui.html">
+            
+                <a href="front-kendoui.html">
+            
+                    
+                    4.1 前端开发说明 (2.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="kendo-form.html">
+            
+                <a href="kendo-form.html">
+            
+                    
+                    4.2 kendoUI Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="kendo-grid.html">
+            
+                <a href="kendo-grid.html">
+            
+                    
+                    4.3 kendoUI Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="kendo-lov.html">
+            
+                <a href="kendo-lov.html">
+            
+                    
+                    4.4 kendoUI Lov
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="kendo-upload.html">
+            
+                <a href="kendo-upload.html">
+            
+                    
+                    4.5 kendoUI Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="kendo-validator.html">
+            
+                <a href="kendo-validator.html">
+            
+                    
+                    4.6 kendoUI Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" >
+            
+                <span>
+            
+                    
+                    4.7 标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.8.1" data-path="kendo-tag-button.html">
+            
+                <a href="kendo-tag-button.html">
+            
+                    
+                    4.7.1 Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.2" data-path="kendo-tag-checkbox.html">
+            
+                <a href="kendo-tag-checkbox.html">
+            
+                    
+                    4.7.2 CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.3" data-path="kendo-tag-combobox.html">
+            
+                <a href="kendo-tag-combobox.html">
+            
+                    
+                    4.7.3 ComboBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.4" data-path="kendo-tag-dataSource.html">
+            
+                <a href="kendo-tag-dataSource.html">
+            
+                    
+                    4.7.4 DataSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.5" data-path="kendo-tag-datePicker.html">
+            
+                <a href="kendo-tag-datePicker.html">
+            
+                    
+                    4.7.5 DatePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.6" data-path="kendo-tag-dateTimePicker.html">
+            
+                <a href="kendo-tag-dateTimePicker.html">
+            
+                    
+                    4.7.6 DateTimePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.7" data-path="kendo-tag-dropDownList.html">
+            
+                <a href="kendo-tag-dropDownList.html">
+            
+                    
+                    4.7.7 DropDownList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.8" data-path="kendo-tag-grid.html">
+            
+                <a href="kendo-tag-grid.html">
+            
+                    
+                    4.7.8 Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.9" data-path="kendo-tag-lov.html">
+            
+                <a href="kendo-tag-lov.html">
+            
+                    
+                    4.7.9 LOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.10" data-path="kendo-tag-maskedTextBox.html">
+            
+                <a href="kendo-tag-maskedTextBox.html">
+            
+                    
+                    4.7.10 MaskedTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.11" data-path="kendo-tag-numbericTextBox.html">
+            
+                <a href="kendo-tag-numbericTextBox.html">
+            
+                    
+                    4.7.11 NumbericTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.12" data-path="kendo-tag-queryPanel.html">
+            
+                <a href="kendo-tag-queryPanel.html">
+            
+                    
+                    4.7.12 QueryPanel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.13" data-path="kendo-tag-radio.html">
+            
+                <a href="kendo-tag-radio.html">
+            
+                    
+                    4.7.13 Radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.14" data-path="kendo-tag-tabStrip.html">
+            
+                <a href="kendo-tag-tabStrip.html">
+            
+                    
+                    4.7.14 TabStrip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.15" data-path="kendo-tag-tlEdit.html">
+            
+                <a href="kendo-tag-tlEdit.html">
+            
+                    
+                    4.7.15 TLEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.16" data-path="kendo-tag-treeList.html">
+            
+                <a href="kendo-tag-treeList.html">
+            
+                    
+                    4.7.16 TreeList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.17" data-path="kendo-tag-treeView.html">
+            
+                <a href="kendo-tag-treeView.html">
+            
+                    
+                    4.7.17 TreeView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="kendo-tag-merge.html">
+            
+                <a href="kendo-tag-merge.html">
+            
+                    
+                    4.8 标签合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="ui-builder.html">
+            
+                <a href="ui-builder.html">
+            
+                    
+                    4.9 表单设计器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    [V. 框架功能描述]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="sys-user.html">
+            
+                <a href="sys-user.html">
+            
+                    
+                    5.1 用户管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="if-manage-introduce.html">
+            
+                <a href="if-manage-introduce.html">
+            
+                    
+                    5.2 接口管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="sys-job.html">
+            
+                <a href="sys-job.html">
+            
+                    
+                    5.3 计划任务功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="activiti-helper.html">
+            
+                <a href="activiti-helper.html">
+            
+                    
+                    5.4 工作流功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.10 审计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5BA1;&#x8BA1;">&#x5BA1;&#x8BA1;</h2>
+<p>HAP &#x652F;&#x6301;&#x5728;&#x4EE3;&#x7801;&#x7EA7;&#x522B;&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x5BF9;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;.</p>
+<p>&#x64CD;&#x4F5C;&#x5305;&#x62EC; : &#x63D2;&#x5165;, &#x66F4;&#x65B0;, &#x5220;&#x9664;.</p>
+<blockquote>
+<p>&#x6682;&#x65F6;&#x53EA;&#x9488;&#x5BF9;&#x5355;&#x8868;&#x64CD;&#x4F5C;&#x6709;&#x6548;.</p>
+</blockquote>
+<h2 id="1-&#x4EE3;&#x7801;&#x51C6;&#x5907;">1. &#x4EE3;&#x7801;&#x51C6;&#x5907;</h2>
+<p>&#x5728;&#x4EE3;&#x7801;&#x5C42;&#x9762;, &#x6709;&#x4E00;&#x4E2A;&#x6CE8;&#x89E3; <code>AuditEnabled</code></p>
+<h4 id="auditenabled">AuditEnabled</h4>
+<p>&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x52A0;&#x5728; DTO &#x7C7B;&#x4E0A;, &#x8868;&#x793A;&#x8FD9;&#x4E2A; DTO &#x4EE3;&#x8868;&#x7684; &#x8868;&#x9700;&#x8981;&#x5F00;&#x542F;&#x5BA1;&#x8BA1;&#x529F;&#x80FD;.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Table</span>(<span class="hljs-string">&quot;SYS_USER&quot;</span>)
+<span class="hljs-meta">@AuditEnabled</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+    ...
+}
+</code></pre>
+<h2 id="2-&#x8868;&#x7ED3;&#x6784;">2. &#x8868;&#x7ED3;&#x6784;</h2>
+<p>&#x6240;&#x6709;&#x9700;&#x8981;&#x5F00;&#x542F;&#x5BA1;&#x8BA1;&#x529F;&#x80FD;&#x7684;&#x8868;, &#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E0E;&#x4E4B;&#x76F8;&#x5BF9;&#x5E94;&#x7684; <code>&#x5BA1;&#x8BA1;&#x8868;</code>.</p>
+<p>&#x547D;&#x540D;&#x89C4;&#x5219; : <code>&#x57FA;&#x8868;&#x540D;</code>_a</p>
+<p>&#x53EF;&#x4EE5;&#x5728; <code>AuditEnabled</code> &#x6CE8;&#x89E3;&#x4E2D;&#x901A;&#x8FC7;&#x53C2;&#x6570; <code>auditTable</code> &#x6765;&#x6307;&#x5B9A;.</p>
+<blockquote>
+<p>&#x8FD9;&#x4E2A;&#x89C4;&#x5219;&#x53EF;&#x4EE5; &#x5B9E;&#x73B0;&#x63A5;&#x53E3; <code>IAuditTableNameProvider</code> &#x6765;&#x81EA;&#x5B9A;&#x4E49;.<br>&#x5B9E;&#x73B0;&#x7C7B;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E3A; spring bean</p>
+</blockquote>
+<p>&#x5BA1;&#x8BA1;&#x8868;&#x5B57;&#x6BB5;<code>&#x5305;&#x542B;&#x6240;&#x6709;&#x5B57;&#x6BB5;</code>, &#x4F46;&#x4E0D;&#x5305;&#x542B;<code>&#x57FA;&#x8868;&#x7684;&#x552F;&#x4E00;&#x7D22;&#x5F15;, &#x4E3B;&#x952E;&#x7EA6;&#x675F;</code>&#x7B49;</p>
+<p>&#x53E6;&#x5916;&#x5FC5;&#x987B;&#x5305;&#x62EC;&#x5BA1;&#x8BA1;&#x4E13;&#x7528;&#x5B57;&#x6BB5;:</p>
+<ul>
+<li><code>audit_id</code> (varchar(80)) &#x4E3B;&#x952E;(uuid)</li>
+<li><code>audit_transaction_type</code> (varchar (10)) &#x5BA1;&#x8BA1;&#x64CD;&#x4F5C;(insert,update,delete)</li>
+<li><code>audit_timestamp</code> (datetime) &#x5BA1;&#x8BA1;&#x65F6;&#x95F4;</li>
+<li><code>audit_session_id</code> (varchar(64)) &#x5BA1;&#x8BA1; session id</li>
+<li><code>audit_tag</code> (nummber(1))  &#x6807;&#x8BB0;&#x662F;&#x5426;&#x4E3A;&#x6700;&#x65B0;&#x5FEB;&#x7167;</li>
+<li><code>lang</code> (varchar(20)) &#x64CD;&#x4F5C;&#x65F6;&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;</li>
+</ul>
+<h2 id="3-&#x57FA;&#x672C;&#x539F;&#x7406;">3 &#x57FA;&#x672C;&#x539F;&#x7406;</h2>
+<p><code>AuditInterceptor</code> &#x4F1A;&#x62E6;&#x622A;&#x6240;&#x6709;&#x7684; Mybatis &#x901A;&#x8FC7; dto &#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;,</p>
+<p>&#x7528; dto &#x4E0A;&#x7684; AuditEnabled &#x6CE8;&#x89E3; &#x6765;&#x51B3;&#x5B9A;&#x662F;&#x4E0D;&#x662F;&#x8981;&#x6267;&#x884C; &#x5BA1;&#x8BA1;&#x64CD;&#x4F5C;.</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x6267;&#x884C;, &#x5219;&#x52A8;&#x6001;&#x751F;&#x6210; SQL &#x8BED;&#x53E5;, &#x5B8C;&#x6210;&#x5BF9;&#x65B0;&#x8BB0;&#x5F55;&#x7684;<code>&#x5907;&#x4EFD;</code> &#x64CD;&#x4F5C;.</p>
+<p>&#x5BA1;&#x8BA1;&#x8868;&#x540D;&#x79F0;&#x662F;&#x901A;&#x8FC7;DTO&#x4E0A;@AuditEnabled&#x6CE8;&#x89E3;&#x4E2D;&#x7684;auditTable&#x503C;&#x83B7;&#x53D6;,&#x82E5;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x4F7F;&#x7528;DTO&#x4E0A;</p>
+<p>@Table&#x6CE8;&#x89E3;&#x4E2D;&#x7684;name&#x503C; + &quot;_a&quot;.</p>
+<p>&#x53E6;&#xFF1A;&#x652F;&#x6301;&#x53C2;&#x6570;&#x4E3A;Map&#xFF0C;&#x4F46;&#x9700;&#x6709;&#x4E00;&#x4E2A;key&#x4E3A;&#x5C0F;&#x5199;<code>dto</code>.</p>
+<p><code>&#x63D2;&#x5165;</code>,<code>&#x66F4;&#x65B0;</code> &#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x662F; &#x5148;&#x64CD;&#x4F5C;, &#x540E;&#x8BB0;&#x5F55;.<br><code>&#x5220;&#x9664;</code> &#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x662F; &#x5148;&#x8BB0;&#x5F55;, &#x540E;&#x64CD;&#x4F5C;.</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;, &#x5BA1;&#x8BA1;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x7684;&#x90FD;&#x662F;<code>&#x6700;&#x65B0;&#x7684;&#x5FEB;&#x7167;</code>.</p>
+<blockquote>
+<p>&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x539F;&#x7406;&#x7684;&#x5BA1;&#x8BA1;, &#x53EA;&#x80FD;&#x505A;&#x5230;&#x884C;&#x7EA7;&#x7684;&#x8BB0;&#x5F55;, &#x65E0;&#x6CD5;&#x5177;&#x4F53;&#x5230;&#x5B57;&#x6BB5;&#x7EA7;.<br>&#x4F46;&#x662F;&#x7ED3;&#x5408;&#x4E00;&#x5B9A;&#x7684;&#x6BD4;&#x8F83;&#x624B;&#x6BB5;, &#x53EF;&#x4EE5;&#x77E5;&#x9053;, &#x67D0;&#x6B21;&#x4FEE;&#x6539;, &#x5230;&#x5E95;&#x4FEE;&#x6539;&#x4E86;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;.</p>
+</blockquote>
+<h2 id="4-&#x652F;&#x6301;sql&#x7C7B;&#x578B;">4 &#x652F;&#x6301;SQL&#x7C7B;&#x578B;</h2>
+<ul>
+<li>oracle/mysql/sqlserver&#x652F;&#x6301;&#x5355;&#x8868;&#x5BA1;&#x8BA1;</li>
+<li>oracle/mysql/sqlserver&#x652F;&#x6301;SQL&#x542B;where&#x6761;&#x4EF6;&#x5B50;&#x67E5;&#x8BE2;&#xFF08;&#x64CD;&#x4F5C;&#x8868;&#x5FC5;&#x987B;&#x6709;&#x522B;&#x540D;&#xFF09;&#x5BA1;&#x8BA1;</li>
+<li>oracle/mysql/sqlserver&#x652F;&#x6301;&#x5355;&#x8868;&#x591A;&#x8BED;&#x8A00;&#x5BA1;&#x8BA1;</li>
+</ul>
+<h2 id="5-&#x5BA1;&#x8BA1;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;">5 &#x5BA1;&#x8BA1;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;</h2>
+<h3 id="&#xFF08;1&#xFF09;-&#x5355;&#x8BED;&#x8A00;">&#xFF08;1&#xFF09; &#x5355;&#x8BED;&#x8A00;</h3>
+<h4 id="controller&#x5C42;">controller&#x5C42;</h4>
+<ul>
+<li>&#x6CE8;&#x5165;Service&#xFF0C;&#x6307;&#x5B9A;Service&#x540D;&#x79F0;</li>
+</ul>
+<pre><code class="lang-java">   <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-meta">@Qualifier</span>(<span class="hljs-string">&quot;auditUserServiceImpl&quot;</span>) <span class="hljs-comment">// &#x6CE8;&#x5165;Service</span>
+    <span class="hljs-keyword">private</span> IAuditRecordService auditUserService;
+
+    <span class="hljs-comment">/**
+     *  &#x67E5;&#x8BE2;&#x5BA1;&#x8BA1;&#x7684;&#x7528;&#x6237;&#x8BB0;&#x5F55;
+     * <span class="hljs-doctag">@param</span> page
+     * <span class="hljs-doctag">@param</span> pageSize
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">&quot;/sys/audit/user/query&quot;</span>)
+    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ResponseData <span class="hljs-title">queryAuditUser</span><span class="hljs-params">(HttpServletRequest request,
+                                       @ModelAttribute User user,
+                                       @RequestParam(defaultValue = DEFAULT_PAGE)</span> <span class="hljs-keyword">int</span> page,
+                                       @<span class="hljs-title">RequestParam</span><span class="hljs-params">(defaultValue = DEFAULT_PAGE_SIZE)</span> <span class="hljs-keyword">int</span> pageSize)</span>{     
+        IRequest iRequest = createRequestContext(request));
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData(auditUserService.selectAuditRecord(iRequest, user, page, pageSize));
+    }
+
+    <span class="hljs-comment">/**
+     *  &#x5BA1;&#x8BA1;&#x7528;&#x6237;&#x7684;&#x8BE6;&#x7EC6;&#x5BA1;&#x8BA1;&#x8BB0;&#x5F55;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">&quot;/sys/audit/user/{uid}/detail&quot;</span>)
+    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ResponseData <span class="hljs-title">queryAuditUserDetail</span><span class="hljs-params">(HttpServletRequest request,
+                                             @RequestParam(defaultValue = DEFAULT_PAGE)</span> <span class="hljs-keyword">int</span> page,
+                                             @<span class="hljs-title">RequestParam</span><span class="hljs-params">(defaultValue = DEFAULT_PAGE_SIZE)</span> <span class="hljs-keyword">int</span> pageSize,
+                                             @PathVariable <span class="hljs-keyword">long</span> uid)</span>{
+        IRequest iRequest = createRequestContext(request));
+        <span class="hljs-comment">//&#x5C01;&#x88C5;&#x4E3A;DTO &#x53EF;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</span>
+        User user = <span class="hljs-keyword">new</span> User();
+        user.setUserId(uid);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData(auditUserService.selectAuditRecordDetail(iRequest, user, page, pageSize));
+    }
+</code></pre>
+<h4 id="service&#x5C42;">service&#x5C42;</h4>
+<ul>
+<li>&#x6307;&#x5B9A;Service&#x540D;&#x79F0;&#xFF0C;&#x5B9E;&#x73B0;IAuditRecordService&#x63A5;&#x53E3;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>(<span class="hljs-string">&quot;auditUserServiceImpl&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuditUserSericeImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">IAuditRecordService</span></span>{
+    <span class="hljs-meta">@Autowired</span>
+    AuditUserMapper userMapper;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> List&lt;Map&lt;String, Object&gt;&gt; selectAuditRecord(IRequest iRequest, BaseDTO dto, <span class="hljs-keyword">int</span> page, <span class="hljs-keyword">int</span> pageSize) {
+        <span class="hljs-comment">// &#x5206;&#x9875;</span>
+        PageHelper.startPage(page, pageSize);
+        <span class="hljs-keyword">return</span> AuditRecordUtils.operateAuditRecord(userMapper.selectAuditUser((User) dto));
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List <span class="hljs-title">selectAuditRecordDetail</span><span class="hljs-params">(IRequest iRequest, BaseDTO dto, <span class="hljs-keyword">int</span> page, <span class="hljs-keyword">int</span> pageSize)</span> </span>{
+        <span class="hljs-comment">// &#x5206;&#x9875;</span>
+        PageHelper.startPage(page,pageSize);
+        <span class="hljs-keyword">return</span> AuditRecordUtils.operateAuditRecordSingleDetail(userMapper.selectAuditUserDetail((User) dto));
+    }
+}
+</code></pre>
+<h4 id="mapper&#x5C42;">Mapper&#x5C42;</h4>
+<pre><code class="lang-java">    <span class="hljs-comment">/**
+     * &#x7528;&#x6237;&#x5BA1;&#x8BA1;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    List&lt;Map&lt;String, Object&gt;&gt; selectAuditUser(User user);
+
+    List&lt;Map&lt;String, Object&gt;&gt; selectAuditUserDetail(User user);
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- &#x5BA1;&#x8BA1;&#x67E5;&#x8BE2;&#x516C;&#x5171;&#x5B57;&#x6BB5;  A: &#x5BA1;&#x8BA1;&#x8868; B&#xFF1A;employee&#x8868;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;common&quot;</span>&gt;</span>
+        SELECT
+        A.AUDIT_ID,
+        A.AUDIT_TIMESTAMP,
+        A.AUDIT_TRANSACTION_TYPE,
+        A.LANG,
+        A.OBJECT_VERSION_NUMBER,
+        B.NAME AS LAST_UPDATED_BY,
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x7528;&#x6237;&#x5BA1;&#x8BA1; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;userPart&quot;</span>&gt;</span>
+        A.USER_ID,
+        A.USER_NAME,
+        A.EMPLOYEE_ID,
+        C.NAME AS EMPLOYEE_NAME,
+        C.EMPLOYEE_CODE AS EMPLOYEE_CODE,
+        A.EMAIL,
+        A.PHONE,
+        A.STATUS,
+        A.START_ACTIVE_DATE,
+        A.END_ACTIVE_DATE,
+        A.DESCRIPTION
+        FROM
+        SYS_USER_A A
+        LEFT OUTER JOIN HR_EMPLOYEE C ON A.EMPLOYEE_ID = C.EMPLOYEE_ID,
+        HR_EMPLOYEE B
+        WHERE B.EMPLOYEE_ID = A.LAST_UPDATED_BY
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectAuditUser&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;com.hand.hap.account.dto.User&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;java.util.Map&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;common&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;userPart&quot;</span> /&gt;</span>
+        AND (A.LANG = #{request.locale,jdbcType=VARCHAR,javaType=java.lang.String}
+        OR A.LANG is NULL )
+        AND A.AUDIT_TAG = 1
+        ORDER BY
+        A.AUDIT_TIMESTAMP DESC
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectAuditUserDetail&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;com.hand.hap.account.dto.User&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;java.util.Map&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;common&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;userPart&quot;</span> /&gt;</span>
+        AND A.USER_ID = #{userId}
+        AND B.EMPLOYEE_ID = A.LAST_UPDATED_BY
+        AND (A.LANG = #{request.locale,jdbcType=VARCHAR,javaType=java.lang.String}
+        OR A.LANG is NULL )
+        ORDER BY A.AUDIT_TIMESTAMP DESC
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<h4 id="&#x5BA1;&#x8BA1;&#x9875;&#x9762;">&#x5BA1;&#x8BA1;&#x9875;&#x9762;</h4>
+<ul>
+<li>&#x9875;&#x9762;&#x5B57;&#x6BB5;&#x4E0E;&#x5B9E;&#x9645;&#x9875;&#x9762;&#x5B57;&#x6BB5;&#x4E00;&#x81F4;&#x3002;</li>
+</ul>
+<h4 id="&#x5BA1;&#x8BA1;&#x8BE6;&#x60C5;&#x9875;&#x9762;">&#x5BA1;&#x8BA1;&#x8BE6;&#x60C5;&#x9875;&#x9762;</h4>
+<ul>
+<li><strong>&#x5F15;&#x5165;common.js</strong></li>
+<li>&#x5FC5;&#x8981;&#x5B57;&#x6BB5;&#xFF1A;&#x5BA1;&#x8BA1;&#x7C7B;&#x578B;&#x3001;&#x4FEE;&#x6539;&#x4EBA;&#xFF0C;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x8C03;&#x7528;<strong>dealAuditSingleLanguageData(data)</strong>&#x3002; </li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${base.contextPath}/resources/js/audit/common.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+// kandoUI Grid &#x8C03;&#x7528;dealAuditSingleLanguageData
+ {
+    field: &quot;employeeName&quot;,
+    title: &apos;<span class="hljs-tag">&lt;<span class="hljs-name">@spring.message</span> &quot;<span class="hljs-attr">employee.name</span>&quot;/&gt;</span>&apos;,
+    width: 100,
+    sortable: false,
+    template : function(rowdata) {
+        return dealAuditSingleLanguageData(rowdata.employeeName);
+    }
+},
+</code></pre>
+<h4 id="&#x754C;&#x9762;&#x663E;&#x793A;">&#x754C;&#x9762;&#x663E;&#x793A;</h4>
+<p><img src="assets/audit-single-list.png" alt=""><br><img src="assets/audit-single-detail.png" alt=""></p>
+<h3 id="&#xFF08;2&#xFF09;-&#x591A;&#x8BED;&#x8A00;">&#xFF08;2&#xFF09; &#x591A;&#x8BED;&#x8A00;</h3>
+<h4 id="cnotroller&#x5C42;">Cnotroller&#x5C42;</h4>
+<ul>
+<li>&#x4E0E;&#x5355;&#x8BED;&#x8A00;Controller &#x7C7B;&#x4F3C;</li>
+</ul>
+<h4 id="service&#x5C42;">service&#x5C42;</h4>
+<ul>
+<li>&#x6307;&#x5B9A;Service&#x540D;&#x79F0;&#xFF0C;&#x5B9E;&#x73B0;IAuditRecordService &#x63A5;&#x53E3;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>(<span class="hljs-string">&quot;auditRoleServiceImpl&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuditRoleServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">IAuditRecordService</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    AuditRoleMapper roleMapper;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> ILanguageProvider languageProvider;
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> List&lt;Map&lt;String, Object&gt;&gt; selectAuditRecord(IRequest iRequest, BaseDTO dto, <span class="hljs-keyword">int</span> page, <span class="hljs-keyword">int</span> pageSize) {
+        PageHelper.startPage(page, pageSize);
+        <span class="hljs-keyword">return</span> AuditRecordUtils.operateAuditRecord(roleMapper.selectAuditRole((Role) dto));
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List <span class="hljs-title">selectAuditRecordDetail</span><span class="hljs-params">(IRequest iRequest, BaseDTO dto, <span class="hljs-keyword">int</span> page, <span class="hljs-keyword">int</span> pageSize)</span> </span>{
+        <span class="hljs-comment">// &#x5206;&#x9875;</span>
+        PageHelper.startPage(page,pageSize);
+        <span class="hljs-comment">// &#x5206;&#x9875;&#x83B7;&#x53D6;AUDIT_SESSION_ID</span>
+        List sessionIds = roleMapper.selectSessionId((Role) dto);
+        <span class="hljs-comment">// &#x901A;&#x8FC7;AUDIT_SESSION_ID &#x83B7;&#x53D6;pageSize*N&#x6761;&#x8BB0;&#x5F55;&#xFF0C;N&#x4E3A;&#x8BED;&#x8A00;&#x4E2A;&#x6570;</span>
+        List&lt;Map&lt;String, Object&gt;&gt; roles = roleMapper.selectAuditRoleDetail(sessionIds);
+        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;</span>
+        List&lt;Language&gt; languages = languageProvider.getSupportedLanguages();
+        <span class="hljs-comment">// &#x5904;&#x7406;&#x6BD4;&#x8F83;pageSize*N&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x8FD4;&#x56DE;pageSize&#x6761;&#x8BB0;&#x5F55;</span>
+        List&lt;Map&lt;String, Map&lt;String, String&gt;&gt;&gt; result =  AuditRecordUtils.operateAuditRecordMultiDetail(roles, languages);
+        <span class="hljs-comment">// &#x7531;&#x4E8E;&#x5206;&#x9875;&#x5668;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A;Page,&#x6545;&#x8F6C;&#x4E3A;&#x5206;&#x9875;&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x578B;</span>
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, j = sessionIds.size(); i &lt; j;  i++){
+            sessionIds.remove(i);
+            sessionIds.add(i, result.get(i));
+        }
+        <span class="hljs-keyword">return</span> sessionIds;
+    }
+}
+</code></pre>
+<h4 id="mapper&#x5C42;">Mapper&#x5C42;</h4>
+<pre><code class="lang-java">    <span class="hljs-comment">/**
+     * &#x89D2;&#x8272;&#x5BA1;&#x8BA1;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x89D2;&#x8272;&#x5BA1;&#x8BA1;&#x5217;&#x8868;</span>
+    List&lt;Map&lt;String, Object&gt;&gt; selectAuditRole(Role role);
+    <span class="hljs-comment">// &#x83B7;&#x53D6;AUDIT_SESSION_ID</span>
+    <span class="hljs-function">List&lt;Map&gt; <span class="hljs-title">selectSessionId</span><span class="hljs-params">(Role role)</span></span>;
+    <span class="hljs-comment">// &#x901A;&#x8FC7;AUDIT_SESSION_ID &#x83B7;&#x53D6;&#x5BA1;&#x8BA1;&#x8BB0;&#x5F55;   </span>
+    List&lt;Map&lt;String, Object&gt;&gt; selectAuditRoleDetail(List list);
+</code></pre>
+<pre><code class="lang-xml">  <span class="hljs-comment">&lt;!-- &#x83B7;&#x53D6;AUDIT_SESSION_ID --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectSessionId&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;com.hand.hap.account.dto.Role&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;java.lang.String&quot;</span>&gt;</span>
+        SELECT AUDIT_SESSION_ID FROM (
+            SELECT DISTINCT AUDIT_SESSION_ID, LAST_UPDATE_DATE, AUDIT_TIMESTAMP
+            FROM SYS_ROLE_B_A
+            WHERE ROLE_ID = #{roleId}
+            ORDER BY AUDIT_TIMESTAMP DESC,
+              LAST_UPDATE_DATE DESC
+            ) A
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x5BA1;&#x8BA1;&#x67E5;&#x8BE2;&#x516C;&#x5171;&#x5B57;&#x6BB5;  A: &#x5BA1;&#x8BA1;&#x8868; B&#xFF1A;employee&#x8868; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;common&quot;</span>&gt;</span>
+        SELECT
+        A.AUDIT_ID,
+        A.AUDIT_TIMESTAMP,
+        A.AUDIT_TRANSACTION_TYPE,
+        A.AUDIT_SESSION_ID,
+        A.LANG,
+        A.OBJECT_VERSION_NUMBER,
+        B.NAME AS LAST_UPDATED_BY,
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x89D2;&#x8272;&#x5BA1;&#x8BA1; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;queryRolePart&quot;</span>&gt;</span>
+        A.ROLE_CODE,
+        A.ROLE_NAME,
+        A.ROLE_DESCRIPTION,
+        A.START_ACTIVE_DATE,
+        A.END_ACTIVE_DATE,
+        A.ROLE_ID
+        FROM SYS_ROLE_B_A A, HR_EMPLOYEE B
+        WHERE A.LAST_UPDATED_BY = B.EMPLOYEE_ID
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectAuditRole&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;java.util.Map&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;common&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;queryRolePart&quot;</span>/&gt;</span>
+        AND (A.LANG = #{request.locale,jdbcType=VARCHAR,javaType=java.lang.String}
+        OR A.LANG is NULL )
+        AND AUDIT_TAG = 1
+        ORDER BY
+        A.AUDIT_TIMESTAMP DESC
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectAuditRoleDetail&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;java.lang.String&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;java.util.Map&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;common&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;queryRolePart&quot;</span>/&gt;</span>
+        AND A.AUDIT_SESSION_ID IN
+        <span class="hljs-tag">&lt;<span class="hljs-name">foreach</span> <span class="hljs-attr">collection</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">index</span>=<span class="hljs-string">&quot;index&quot;</span> <span class="hljs-attr">item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">open</span>=<span class="hljs-string">&quot;(&quot;</span> <span class="hljs-attr">separator</span>=<span class="hljs-string">&quot;,&quot;</span> <span class="hljs-attr">close</span>=<span class="hljs-string">&quot;)&quot;</span>&gt;</span>
+            #{item}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">foreach</span>&gt;</span>
+        ORDER BY A.AUDIT_TIMESTAMP DESC
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<h4 id="&#x5BA1;&#x8BA1;&#x9875;&#x9762;">&#x5BA1;&#x8BA1;&#x9875;&#x9762;</h4>
+<ul>
+<li>&#x9875;&#x9762;&#x5B57;&#x6BB5;&#x4E0E;&#x5B9E;&#x9645;&#x9875;&#x9762;&#x5B57;&#x6BB5;&#x4E00;&#x81F4;&#x3002;</li>
+</ul>
+<h4 id="&#x5BA1;&#x8BA1;&#x8BE6;&#x60C5;&#x9875;&#x9762;">&#x5BA1;&#x8BA1;&#x8BE6;&#x60C5;&#x9875;&#x9762;</h4>
+<ul>
+<li><strong>&#x5F15;&#x5165;common.js</strong></li>
+<li>&#x5FC5;&#x8981;&#x5B57;&#x6BB5;&#xFF1A;&#x5BA1;&#x8BA1;&#x7C7B;&#x578B;&#x3001;&#x4FEE;&#x6539;&#x4EBA;&#xFF0C;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x8C03;&#x7528;<strong>dealAuditMultiLanguageData(data, isShowMultiLanguage)</strong>&#x3002;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${base.contextPath}/resources/js/audit/common.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+// kandoUI Grid &#x8C03;&#x7528;dealAuditSingleLanguageData
+  columns: [{
+    title: &apos;<span class="hljs-tag">&lt;<span class="hljs-name">@spring.message</span> &quot;<span class="hljs-attr">role.roledescription</span>&quot;/&gt;</span>&apos;,
+    width: 120,
+    sortable: false,
+    template : function(rowdata) {
+        return dealAuditMultiLanguageData(rowdata.roleDescription, true);
+    },
+
+},...],
+  dataBound: function(e) {
+    var tooltips = $(&quot;span[name=&apos;target&apos;]&quot;).kendoTooltip({
+        animation: false,
+        width: 200,
+        content: function (e) {
+            var content =  e.target.attr(&quot;tooltip-content&quot;);
+            while(content.indexOf(&quot;&amp;&quot;) &gt;= 0) {
+                content = content.replace(&quot;&amp;&quot;, &quot;<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>&quot;);
+            }
+            return content;
+        },
+    }).data(&quot;kendoTooltip&quot;);
+}
+</code></pre>
+<h4 id="&#x754C;&#x9762;&#x663E;&#x793A;">&#x754C;&#x9762;&#x663E;&#x793A;</h4>
+<p><img src="assets/audit-multi-list.png" alt="">
+<img src="assets/audit-multi-detail.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lock.html" class="navigation navigation-prev " aria-label="Previous page: 3.9 锁机制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="multi-language.html" class="navigation navigation-next " aria-label="Next page: 3.11 数据多语言">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.10 审计","level":"2.3.10","depth":2,"next":{"title":"3.11 数据多语言","level":"2.3.11","depth":2,"path":"multi-language.md","ref":"multi-language.md","articles":[]},"previous":{"title":"3.9 锁机制","level":"2.3.9","depth":2,"path":"lock.md","ref":"lock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"family":"Microsoft YaHei","size":1},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Microsoft YaHei","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"HAP Developer Guide","gitbook":"*","description":"HAP Developer Guide"},"file":{"path":"audit.md","mtime":"2018-09-04T07:28:32.674Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T10:57:11.176Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

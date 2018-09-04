@@ -1,0 +1,1623 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.5 消息机制   · HAP Developer Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="profile.html" />
+    
+    
+    <link rel="prev" href="webservice-cxf.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    GitBook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="changes-35.html">
+            
+                <a href="changes-35.html">
+            
+                    
+                    3.5更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="changes-31.html">
+            
+                <a href="changes-31.html">
+            
+                    
+                    3.1更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="changes-30.html">
+            
+                <a href="changes-30.html">
+            
+                    
+                    3.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changes-20.html">
+            
+                <a href="changes-20.html">
+            
+                    
+                    2.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="change-20-tables.html">
+            
+                <a href="change-20-tables.html">
+            
+                    
+                    2.0表结构变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                <a href="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                    
+                    I. 开发环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="git-guide.html">
+            
+                <a href="git-guide.html">
+            
+                    
+                    1.1 Git 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    1.2 Maven 使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="system-requirements.html">
+            
+                <a href="system-requirements.html">
+            
+                    
+                    1.3 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="database-init.html">
+            
+                <a href="database-init.html">
+            
+                    
+                    1.4 创建数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="database-config.html">
+            
+                <a href="database-config.html">
+            
+                    
+                    1.5 MySql, Oracle, SQL Server 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="project-create.html">
+            
+                <a href="project-create.html">
+            
+                    
+                    1.6 新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="project-update.html">
+            
+                <a href="project-update.html">
+            
+                    
+                    1.7 更新项目的HAP依赖版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="liquibase-use.html">
+            
+                <a href="liquibase-use.html">
+            
+                    
+                    1.8 Liquibase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="multi-data-source.html">
+            
+                <a href="multi-data-source.html">
+            
+                    
+                    1.9 多数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                <a href="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                    
+                    II. 项目开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="backend-dev_principle.html">
+            
+                <a href="backend-dev_principle.html">
+            
+                    
+                    2.1 项目开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="code-guide/front-code-guide.html">
+            
+                <a href="code-guide/front-code-guide.html">
+            
+                    
+                    2.2 前端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="code-guide/back-code-guide.html">
+            
+                <a href="code-guide/back-code-guide.html">
+            
+                    
+                    2.3 后端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="checkstyle.html">
+            
+                <a href="checkstyle.html">
+            
+                    
+                    2.4 Checkstyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="iii-hou-duan-kai-fa.html">
+            
+                <a href="iii-hou-duan-kai-fa.html">
+            
+                    
+                    III. 后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="security-cas.html">
+            
+                <a href="security-cas.html">
+            
+                    
+                    3.1 CAS 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ldap-config.html">
+            
+                <a href="ldap-config.html">
+            
+                    
+                    3.2 LDAP 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ldap-server.html">
+            
+                <a href="ldap-server.html">
+            
+                    
+                    3.3 LDAP 服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.4 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.5" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    3.5 消息机制  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    3.6 配置维护  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="user-security-strategy.html">
+            
+                <a href="user-security-strategy.html">
+            
+                    
+                    3.7 用户安全策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="sso-describe.html">
+            
+                <a href="sso-describe.html">
+            
+                    
+                    3.8 单点登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    3.9 锁机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="audit.html">
+            
+                <a href="audit.html">
+            
+                    
+                    3.10 审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="multi-language.html">
+            
+                <a href="multi-language.html">
+            
+                    
+                    3.11 数据多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    3.12 MyBatis 使用手册  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="mybatis2.html">
+            
+                <a href="mybatis2.html">
+            
+                    
+                    3.13 MyBatis 注意事项  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="elk.html">
+            
+                <a href="elk.html">
+            
+                    
+                    3.14 日志管理 ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="code-generator.html">
+            
+                <a href="code-generator.html">
+            
+                    
+                    3.15 代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    3.16 防止 CSRF 攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="dev-flow.html">
+            
+                <a href="dev-flow.html">
+            
+                    
+                    3.17 开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.18 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="activiti.html">
+            
+                <a href="activiti.html">
+            
+                    
+                    3.19 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="activiti-demo-vacation.html">
+            
+                <a href="activiti-demo-vacation.html">
+            
+                    
+                    3.19.1 工作流demo-请假申请
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    3.20 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="excel.html">
+            
+                <a href="excel.html">
+            
+                    
+                    3.21 EXCEL导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="sys-resource-item.html">
+            
+                <a href="sys-resource-item.html">
+            
+                    
+                    3.22 权限组件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="3.24-cors.html">
+            
+                <a href="3.24-cors.html">
+            
+                    
+                    3.23 跨域访问（CORS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.25" data-path="flex-field.html">
+            
+                <a href="flex-field.html">
+            
+                    
+                    3.24 弹性域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.26" data-path="code-rule.html">
+            
+                <a href="code-rule.html">
+            
+                    
+                    3.25 编码规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.27" data-path="data-permission.html">
+            
+                <a href="data-permission.html">
+            
+                    
+                    3.26 数据屏蔽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.28" data-path="mongodb-integration.html">
+            
+                <a href="mongodb-integration.html">
+            
+                    
+                    3.27 MongoDB 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.29" data-path="sys-report.html">
+            
+                <a href="sys-report.html">
+            
+                    
+                    3.28 报表管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.30" data-path="api-server-manager.html">
+            
+                <a href="api-server-manager.html">
+            
+                    
+                    3.29 服务治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.31" data-path="task-manage.html">
+            
+                <a href="task-manage.html">
+            
+                    
+                    3.30 任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="iv-qian-duan-kai-fa.html">
+            
+                <a href="iv-qian-duan-kai-fa.html">
+            
+                    
+                    IV. 前端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="front-ligerui.html">
+            
+                <a href="front-ligerui.html">
+            
+                    
+                    4.0 前端开发说明 (1.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="front-kendoui.html">
+            
+                <a href="front-kendoui.html">
+            
+                    
+                    4.1 前端开发说明 (2.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="kendo-form.html">
+            
+                <a href="kendo-form.html">
+            
+                    
+                    4.2 kendoUI Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="kendo-grid.html">
+            
+                <a href="kendo-grid.html">
+            
+                    
+                    4.3 kendoUI Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="kendo-lov.html">
+            
+                <a href="kendo-lov.html">
+            
+                    
+                    4.4 kendoUI Lov
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="kendo-upload.html">
+            
+                <a href="kendo-upload.html">
+            
+                    
+                    4.5 kendoUI Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="kendo-validator.html">
+            
+                <a href="kendo-validator.html">
+            
+                    
+                    4.6 kendoUI Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" >
+            
+                <span>
+            
+                    
+                    4.7 标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.8.1" data-path="kendo-tag-button.html">
+            
+                <a href="kendo-tag-button.html">
+            
+                    
+                    4.7.1 Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.2" data-path="kendo-tag-checkbox.html">
+            
+                <a href="kendo-tag-checkbox.html">
+            
+                    
+                    4.7.2 CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.3" data-path="kendo-tag-combobox.html">
+            
+                <a href="kendo-tag-combobox.html">
+            
+                    
+                    4.7.3 ComboBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.4" data-path="kendo-tag-dataSource.html">
+            
+                <a href="kendo-tag-dataSource.html">
+            
+                    
+                    4.7.4 DataSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.5" data-path="kendo-tag-datePicker.html">
+            
+                <a href="kendo-tag-datePicker.html">
+            
+                    
+                    4.7.5 DatePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.6" data-path="kendo-tag-dateTimePicker.html">
+            
+                <a href="kendo-tag-dateTimePicker.html">
+            
+                    
+                    4.7.6 DateTimePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.7" data-path="kendo-tag-dropDownList.html">
+            
+                <a href="kendo-tag-dropDownList.html">
+            
+                    
+                    4.7.7 DropDownList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.8" data-path="kendo-tag-grid.html">
+            
+                <a href="kendo-tag-grid.html">
+            
+                    
+                    4.7.8 Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.9" data-path="kendo-tag-lov.html">
+            
+                <a href="kendo-tag-lov.html">
+            
+                    
+                    4.7.9 LOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.10" data-path="kendo-tag-maskedTextBox.html">
+            
+                <a href="kendo-tag-maskedTextBox.html">
+            
+                    
+                    4.7.10 MaskedTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.11" data-path="kendo-tag-numbericTextBox.html">
+            
+                <a href="kendo-tag-numbericTextBox.html">
+            
+                    
+                    4.7.11 NumbericTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.12" data-path="kendo-tag-queryPanel.html">
+            
+                <a href="kendo-tag-queryPanel.html">
+            
+                    
+                    4.7.12 QueryPanel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.13" data-path="kendo-tag-radio.html">
+            
+                <a href="kendo-tag-radio.html">
+            
+                    
+                    4.7.13 Radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.14" data-path="kendo-tag-tabStrip.html">
+            
+                <a href="kendo-tag-tabStrip.html">
+            
+                    
+                    4.7.14 TabStrip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.15" data-path="kendo-tag-tlEdit.html">
+            
+                <a href="kendo-tag-tlEdit.html">
+            
+                    
+                    4.7.15 TLEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.16" data-path="kendo-tag-treeList.html">
+            
+                <a href="kendo-tag-treeList.html">
+            
+                    
+                    4.7.16 TreeList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.17" data-path="kendo-tag-treeView.html">
+            
+                <a href="kendo-tag-treeView.html">
+            
+                    
+                    4.7.17 TreeView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="kendo-tag-merge.html">
+            
+                <a href="kendo-tag-merge.html">
+            
+                    
+                    4.8 标签合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="ui-builder.html">
+            
+                <a href="ui-builder.html">
+            
+                    
+                    4.9 表单设计器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    [V. 框架功能描述]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="sys-user.html">
+            
+                <a href="sys-user.html">
+            
+                    
+                    5.1 用户管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="if-manage-introduce.html">
+            
+                <a href="if-manage-introduce.html">
+            
+                    
+                    5.2 接口管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="sys-job.html">
+            
+                <a href="sys-job.html">
+            
+                    
+                    5.3 计划任务功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="activiti-helper.html">
+            
+                <a href="activiti-helper.html">
+            
+                    
+                    5.4 工作流功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.5 消息机制  </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6D88;&#x606F;&#x7CFB;&#x7EDF;">&#x6D88;&#x606F;&#x7CFB;&#x7EDF;</h1>
+<h2 id="1&#x7B80;&#x4ECB;">1.&#x7B80;&#x4ECB;</h2>
+<p>HAP &#x7684;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;<code>&#x961F;&#x5217;</code>&#x548C;<code>&#x5E7F;&#x64AD;</code>&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x4E3A; Redis &#x548C; RabbitMQ&#x3002; &#x7528;&#x6237;&#x5728; <code>config.properties</code> &#x4E2D; message.provider &#x6765;&#x5B9E;&#x73B0;&#x5207;&#x6362;&#x3002; <code>applicationContext-msg.xml</code> &#x6839;&#x636E; <code>config.properties</code> &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x9009;&#x62E9;&#x52A0;&#x8F7D; <code>message/rabbitmq.xml</code> &#x6216; <code>message/redis.xml</code>&#x3002;</p>
+<p><img src="assets/mq1.png" alt=""></p>
+<h3 id="11-redis">1.1 Redis</h3>
+<p>Redis &#x672C;&#x8EAB;&#x652F;&#x6301;MQ&#x529F;&#x80FD;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x961F;&#x5217;&#x670D;&#x52A1;&#xFF0C;&#x5177;&#x6709;&#x9AD8;&#x6548;&#x6027;&#xFF0C;&#x4F46;&#x4E0D;&#x5177;&#x6709;&#x53EF;&#x9760;&#x6027;&#xFF08;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF09;&#xFF0C;&#x4E0D;&#x63D0;&#x4F9B;&#x961F;&#x5217;&#x76D1;&#x63A7;&#x3002;Redis &#x6D88;&#x606F;&#x961F;&#x5217;&#x591A;&#x5E94;&#x7528;&#x4E8E;&#x5373;&#x65F6;&#x6570;&#x636E;&#x5206;&#x6790;&#x3001;&#x79D2;&#x6740;&#x8BA1;&#x6570;&#x5668;&#x3001;&#x7F13;&#x5B58;&#x7B49;&#x8F7B;&#x91CF;&#x7EA7;&#xFF0C;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x5EF6;&#x8FDF;&#x654F;&#x611F;&#x573A;&#x666F;&#x3002;</p>
+<h3 id="12-rabbitmq-310-release">1.2 RabbitMQ (3.1.0-RELEASE)</h3>
+<p>RabbitMQ &#x662F;&#x5B9E;&#x73B0; AMQP&#xFF08;&#x9AD8;&#x7EA7;&#x6D88;&#x606F;&#x961F;&#x5217;&#x534F;&#x8BAE;&#xFF09;&#x7684;&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x50A8;&#x8F6C;&#x53D1;&#x6D88;&#x606F;&#xFF0C;&#x5728;&#x6613;&#x7528;&#x6027;&#x3001;&#x6269;&#x5C55;&#x6027;&#x3001;&#x9AD8;&#x53EF;&#x7528;&#x6027;&#x7B49;&#x65B9;&#x9762;&#x8868;&#x73B0;&#x4E0D;&#x4FD7;&#x3002;&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x89E3;&#x8026;&#x3002;rabbitmq&#x591A;&#x5E94;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x6570;&#x636E;&#x5F02;&#x6B65;&#x5904;&#x7406;&#x3001;&#x5E76;&#x884C;&#x4EFB;&#x52A1;&#x4E32;&#x884C;&#x5316;&#xFF0C;&#x9AD8;&#x8D1F;&#x8F7D;&#x4EFB;&#x52A1;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B49; &#x91CD;&#x91CF;&#x7EA7;&#xFF0C;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x5F02;&#x6B65;&#x9AD8;&#x53EF;&#x9760;&#x6027;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="2-&#x961F;&#x5217;">2 &#x961F;&#x5217;</h2>
+<p>&#x961F;&#x5217;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF1A;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x53EA;&#x80FD;&#x88AB;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;&#x4E00;&#x6B21;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x5728;&#x96C6;&#x7FA4;&#x6216;&#x8005;&#x591A;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;&#x4E0B;&#x3002;</p>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x6709;&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#xFF0C;&#x8FD9;&#x4E9B;&#x6D88;&#x8D39;&#x8005;&#x53D6;&#x5230;&#x6D88;&#x606F;&#x7684;&#x6982;&#x7387;&#x5927;&#x81F4;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
+<p>&#x5927;&#x6279;&#x91CF;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4F1A;&#x5927;&#x81F4;&#x5747;&#x5300;&#x5206;&#x6563;&#x7ED9;&#x6240;&#x6709;&#x6D88;&#x8D39;&#x8005;&#x5904;&#x7406;&#x3002;</p>
+</blockquote>
+<h3 id="21-&#x5411;&#x961F;&#x5217;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;">2.1 &#x5411;&#x961F;&#x5217;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;</h3>
+<p>&#x5728; java &#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6CE8;&#x5165; IMessagePublisher &#x7C7B;&#x3002;</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">XXXSenderTest</span> </span>{
+
+ <span class="hljs-meta">@Autowired</span>
+
+ <span class="hljs-keyword">private</span> IMessagePublisher messagePublisher;
+
+
+
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessageTest</span> <span class="hljs-params">()</span></span>{
+
+   <span class="hljs-comment">// &#x5411; &#x961F;&#x5217;&#xFF1A;queue1 &#x4E2D;&#x53D1;&#x9001;&#x6D88;&#x606F; &#xFF1A; message1&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;</span>
+
+   messagePublisher.message(<span class="hljs-string">&quot;queue1&quot;</span>,<span class="hljs-string">&quot;message1&quot;</span>);
+
+   User user = <span class="hljs-keyword">new</span> User();
+
+   user.setUserName(<span class="hljs-string">&quot;YJP&quot;</span>);
+
+ <span class="hljs-comment">// &#x5411;&#x961F;&#x5217;&#xFF1A;queue2 &#x4E2D;&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF1A;bean&#xFF08;&#x5BF9;&#x8C61;&#xFF09;</span>
+
+  messagePublisher.message(<span class="hljs-string">&quot;queue2&quot;</span>, user);
+ }
+}
+</code></pre>
+<blockquote>
+<p>&#x4E4B;&#x524D;&#x7684; rPush &#x547D;&#x4EE4;&#x4E0D;&#x518D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x6539;&#x4E3A; message</p>
+</blockquote>
+<p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x4E86;&#x5982;&#x4F55;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6D88;&#x606F;</p>
+<ol>
+<li><p>&#x6CE8;&#x5165; IMessagePublisher &#x7528;&#x4E8E;&#x53D1;&#x9001;&#x6D88;&#x606F;</p>
+</li>
+<li><p>message &#x65B9;&#x6CD5;&#x6267;&#x884C;&#x53D1;&#x9001;&#x547D;&#x4EE4;&#xFF0C;&#x6CE8;&#x610F; 2 &#x4E2A;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x4F1A;&#x8F6C;&#x6362;&#x4E3A; json &#x683C;&#x5F0F;</p>
+</li>
+</ol>
+<blockquote>
+<p>&#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x6362;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x8C03;&#x7528;&#x8005;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;</p>
+</blockquote>
+<h3 id="22-&#x76D1;&#x542C;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6D88;&#x606F;">2.2 &#x76D1;&#x542C;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6D88;&#x606F;</h3>
+<p>&#x76D1;&#x542C;&#x961F;&#x5217;&#x6D88;&#x606F;&#x7684; java &#x5B9E;&#x73B0;</p>
+<pre><code class="lang-java">
+<span class="hljs-meta">@QueueMonitor</span>(queue=<span class="hljs-string">&quot;queue1&quot;</span>)
+
+<span class="hljs-keyword">public</span> XXXReceiver implements IMessageConsumer&lt;String&gt;{
+
+ <span class="hljs-comment">/**
+  * &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4E0E; IMessageConsumer &#x7684;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x4E00;&#x81F4;
+  */</span>
+
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onMessage</span><span class="hljs-params">(String message,String queue)</span> </span>{
+
+   System.out.println(<span class="hljs-string">&quot;got message :&quot;</span>+message);
+
+ }
+}
+</code></pre>
+<p>&#x5173;&#x952E;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x76D1;&#x542C;&#x7C7B;&#x9700;&#x8981;&#x5728; Spring &#x4E2D;&#x5B9A;&#x4E49;&#x4E3A; bean &#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; @Component &#x4E4B;&#x7C7B;&#x7684;&#x6CE8;&#x89E3;&#x81EA;&#x52A8;&#x626B;&#x63CF;&#x6CE8;&#x518C;&#xFF09;</li>
+<li>&#x6DFB;&#x52A0;&#x6CE8;&#x89E3; QueueMonitor&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x7C7B;&#x8981;&#x76D1;&#x542C;&#x961F;&#x5217; <code>queue1</code></li>
+<li>&#x5B9E;&#x73B0;&#x63A5;&#x53E3; IMessageConsumer&#xFF0C;&#x6307;&#x5B9A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;</li>
+</ol>
+<p>&#x5982;&#x679C;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x662F; java bean &#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982; 1.1&#x7AE0;&#x8282; &#x4F8B;&#x5B50;&#x4E2D; &#x7684; User&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;&#x662F;IMessageConsumer&lt; User&gt;&#x3002;</p>
+<blockquote>
+<p>&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x8981;&#x4FDD;&#x8BC1;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x4E0E;&#x63A5;&#x6536;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x81F4;!</p>
+</blockquote>
+<h2 id="3-&#x53D1;&#x5E03;&#x8BA2;&#x9605;">3 &#x53D1;&#x5E03;/&#x8BA2;&#x9605;</h2>
+<p>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF1A;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x4F1A;&#x88AB;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x8005;&#x6536;&#x5230;&#xFF08;&#x53EA;&#x4F1A;&#x6536;&#x5230;&#x4E00;&#x6B21;&#xFF09;&#x3002;</p>
+<p>&#x5728;redis&#x4E2D;&#xFF0C;&#x53D1;&#x5E03;&#x7684;&#x6D88;&#x606F;&#x4F1A;&#x88AB;&#x6240;&#x6709;db&#x5171;&#x4EAB;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;<code>&#x6D88;&#x606F;&#x524D;&#x7F00;</code>&#xFF0C;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x9879;&#x76EE;&#x7684;&#x6D88;&#x606F;&#xFF1A;</p>
+<blockquote>
+<p>&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x5171;&#x7528;&#x4E00;&#x4E2A;redis&#xFF0C;&#x7ED9;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6D88;&#x606F;&#x524D;&#x7F00;</p>
+</blockquote>
+<p>&#x5728;<code>config.properties</code> &#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code>  redis.topic.channel.prefix=HAP
+</code></pre><blockquote>
+<p>redis &#x4E2D;&#x7684;&#x961F;&#x5217;&#xFF08;Queue&#xFF09;&#x6D88;&#x606F;&#x662F;&#x7ED1;&#x5B9A;&#x5230;&#x67D0;&#x4E2A;db&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x6D88;&#x606F;&#x524D;&#x7F00;&#x533A;&#x5206;&#x3002;</p>
+</blockquote>
+<h3 id="31-&#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x6D88;&#x606F;">3.1 &#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x6D88;&#x606F;</h3>
+<p>&#x53D1;&#x5E03;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; java &#x4EE3;&#x7801;&#x5B9E;&#x4F8B;</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">XXXPublisher</span> </span>{
+
+ <span class="hljs-meta">@Autowired</span>
+
+ <span class="hljs-keyword">private</span> IMessagePublisher messagePublisher;
+
+
+
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">publishTest</span> <span class="hljs-params">()</span></span>{
+
+ <span class="hljs-comment">// &#x5411;&#x9891;&#x9053; : channel1 &#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6D88;&#x606F;</span>
+
+ messagePublisher.publish(<span class="hljs-string">&quot;channel1&quot;</span>,<span class="hljs-string">&quot;message1&quot;</span>);
+
+
+
+ User bean = <span class="hljs-keyword">new</span> User();
+
+ bean.setUserName(<span class="hljs-string">&quot;YPP&quot;</span>);
+
+ <span class="hljs-comment">// &#x5411;&#x9891;&#x9053;&#xFF1A;channel2 &#x53D1;&#x5E03;&#x4E00;&#x4E2A; java bean</span>
+
+ messagePublisher.publish(<span class="hljs-string">&quot;channel2&quot;</span>,bean);
+
+ }
+
+}
+</code></pre>
+<p>&#x57FA;&#x672C;&#x70B9;&#xFF0C;&#x4E0E;&#x7AE0;&#x8282; 3.1 &#x7C7B;&#x4F3C;</p>
+<ol>
+<li><p>&#x6CE8;&#x5165; IMessagePublisher</p>
+</li>
+<li><p>publish &#x65B9;&#x6CD5;&#xFF08;&#x8FD9;&#x4E2A;&#x4E0E;&#x961F;&#x5217;&#x4E0D;&#x540C;&#xFF01;&#xFF09;</p>
+</li>
+<li><p>&#x652F;&#x6301;&#x591A;&#x79CD;&#x7C7B;&#x578B;</p>
+</li>
+</ol>
+<h3 id="32-&#x8BA2;&#x9605;&#x4E00;&#x4E2A;&#x6D88;&#x606F;">3.2 &#x8BA2;&#x9605;&#x4E00;&#x4E2A;&#x6D88;&#x606F;</h3>
+<p>&#x793A;&#x4F8B; java &#x7C7B;</p>
+<pre><code class="lang-java">
+<span class="hljs-meta">@TopicMonitor</span>(channel={<span class="hljs-string">&quot;channel1&quot;</span>})
+
+publish <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">XXXSubscriber</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">IMessageConsumer</span>&lt;<span class="hljs-title">String</span>&gt;</span>{
+
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onMessage</span><span class="hljs-params">(String message,String pattern)</span> </span>{
+
+ System.out.println(<span class="hljs-string">&quot;onMessage:&quot;</span>+message);
+
+ }
+
+}
+</code></pre>
+<p>&#x57FA;&#x672C;&#x70B9;&#xFF0C;&#x4E0E;&#x7AE0;&#x8282; 3.2 &#x7C7B;&#x4F3C;</p>
+<ol>
+<li><p>&#x6DFB;&#x52A0;&#x6CE8;&#x89E3; TopicMonitor&#xFF0C;channel&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BA2;&#x9605;&#x591A;&#x4E2A;&#x9891;&#x9053;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#x3002;</p>
+</li>
+<li><p>&#x5B9E;&#x73B0;&#x63A5;&#x53E3; IMessageConsumer&#xFF0C;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x6D88;&#x606F;</p>
+</li>
+</ol>
+<p>&#x8FD9;&#x4E2A;&#x7C7B;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E3A; Spring bean&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x6CE8;&#x89E3;&#x81EA;&#x52A8;&#x626B;&#x63CF;&#x6CE8;&#x518C;&#x3002;</p>
+<h2 id="4&#x6269;&#x5C55;rabbitmq">4.&#x6269;&#x5C55;RabbitMQ</h2>
+<p>&#x82E5;&#x4F7F;&#x7528;&#x6846;&#x67B6;&#x9ED8;&#x8BA4;&#x7684;RabbitMQ&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x961F;&#x5217;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x6C42;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x65B0;&#x5EFA;</p>
+<p>applicationContext-xxx.xml&#x6587;&#x4EF6;&#xFF08;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#xFF09;&#x3002;</p>
+<h3 id="41-&#x83B7;&#x53D6;&#x8FDE;&#x63A5;">4.1 &#x83B7;&#x53D6;&#x8FDE;&#x63A5;</h3>
+<p>&#x901A;&#x8FC7;connectionFactory&#x83B7;&#x53D6;&#x4E0E;RabbitMQ&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x518D;&#x6B64;&#x914D;&#x7F6E;&#x6240;&#x9700;<strong>&#x7F13;&#x5B58;</strong>(&#x6A21;&#x5F0F;&#xFF0C;&#x5927;&#x5C0F;),<strong>virtual-host</strong>(&#x9ED8;&#x8BA4;&#x201D;\/&quot;)&#x7B49;&#x5C5E;&#x6027;</p>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">rabbit:connection-factory</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;connectionFactory&quot;</span> <span class="hljs-attr">host</span>=<span class="hljs-string">&quot;${rabbitmq.host}&quot;</span> <span class="hljs-attr">username</span>=<span class="hljs-string">&quot;${rabbitmq.username}&quot;</span> <span class="hljs-attr">password</span>=<span class="hljs-string">&quot;${rabbitmq.password}&quot;</span> <span class="hljs-attr">port</span>=<span class="hljs-string">&quot;${rabbitmq.port}&quot;</span>/&gt;</span>
+</code></pre>
+<h3 id="42-&#x961F;&#x5217;">4.2 &#x961F;&#x5217;</h3>
+<p>hap&#x4E2D;&#x961F;&#x5217;&#x6839;&#x636E;&#x6CE8;&#x89E3;&#x52A8;&#x6001;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x9ED8;&#x8BA4;&#x961F;&#x5217;&#x4E3A;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x5E7F;&#x64AD;&#x961F;&#x5217;&#x4E3A;&#x975E;&#x6301;&#x4E45;&#x5316;&#x3002;&#x7528;&#x6237;&#x4E5F;&#x53EF;&#x5728;xml&#x901A;&#x8FC7;&lt;<strong>rabbit:queue&gt;&#x6807;&#x7B7E;</strong>&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x9700;&#x6C42;&#x5B9A;&#x4E49;&#x6240;&#x9700;&#x7684;&#x961F;&#x5217;&#x5C5E;&#x6027;&#x5982;&#xFF1A;<strong>durable</strong>( &#x6301;&#x4E45;&#x5316;&#x5C5E;&#x6027; ),<strong>auto-delete</strong>(&#x8FDE;&#x63A5;&#x5173;&#x95ED;&#x540E;&#x662F;&#x5426;&#x5220;&#x9664;&#x961F;&#x5217;)<strong>&#x3002;</strong></p>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">rabbit:queue</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;queueTest&quot;</span> <span class="hljs-attr">durable</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">auto-delete</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">rabbit:queue</span>&gt;</span>
+</code></pre>
+<h3 id="43-&#x8DEF;&#x7531;">4.3 &#x8DEF;&#x7531;</h3>
+<p>rabbitmq&#x4E3B;&#x8981;&#x7531;3&#x79CD;&#x8DEF;&#x7531;&#x65B9;&#x5F0F;<strong>direct(&#x5355;&#x64AD;),topic(&#x591A;&#x64AD;),fanout(&#x5E7F;&#x64AD;),</strong>rabbitmq&#x4F1A;&#x6839;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x901A;&#x8FC7;routing-key&#x53D1;&#x9001;&#x7ED9;&#x8DEF;&#x7531;&#x91CC;&#x7684;&#x961F;&#x5217;&#x3002;&#x8DEF;&#x7531;&#x901A;&#x8FC7;&lt;<strong>rabbit:direct-exchange&gt;</strong>&lt;<strong>rabbit:</strong> <strong>topic-exchange&gt;</strong>&lt;<strong>rabbit:</strong> <strong>fanout-exchange&gt;&#x6807;&#x7B7E;</strong>&#x7533;&#x660E;<strong>&#x3002;</strong></p>
+<h3 id="44-&#x7ED1;&#x5B9A;&#x8DEF;&#x7531;">4.4 &#x7ED1;&#x5B9A;&#x8DEF;&#x7531;</h3>
+<p>&#x5C06;&#x961F;&#x5217;&#x7ED1;&#x5B9A;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x7531;&#xFF0C;&#x628A;&#x961F;&#x5217;&#x548C;&#x8DEF;&#x7531;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x3002;&#x7531; <strong> &lt;rabbit:bindings&gt; &#x6807;&#x7B7E;</strong>&#x58F0;&#x660E;&#x3002;&#xFF08;&#x793A;&#x4F8B;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-xml">
+<span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;direct exchange&#xFF0C;&#x7ED1;&#x5B9A;queueTest --&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:direct-exchange</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;exchangeTest&quot;</span> <span class="hljs-attr">durable</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">auto-delete</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:bindings</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:binding</span> <span class="hljs-attr">queue</span>=<span class="hljs-string">&quot;queueTest&quot;</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;queueTestKey&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">rabbit:binding</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;/<span class="hljs-name">rabbit:bindings</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;/<span class="hljs-name">rabbit:direct-exchange</span>&gt;</span>
+</code></pre>
+<h3 id="45-rabbittemplate">4.5 RabbitTemplate</h3>
+<p>&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF0C;&#x901A;&#x8FC7; <code>rabbit:template</code> &#x6807;&#x7B7E;&#x58F0;&#x660E;&#xFF0C;&#x6CE8;&#x5165;bean&#x540E;&#x53EF;&#x4F7F;&#x7528;convertAndSend&#x7B49;&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#x4E5F;&#x53EF;&#x4F7F;&#x7528;receiveAndConvert&#x7B49;&#x65B9;&#x6CD5;<strong>&#x540C;&#x6B65;</strong>&#x63A5;&#x53D7;&#x6D88;&#x606F;&#x3002;&#x9700;&#x8981;&#x53C2;&#x6570;exchange&#x548C; routing-key&#x6765;&#x786E;&#x5B9A;&#x53D1;&#x5F80;&#x7684;&#x961F;&#x5217;&#x3002; &#x53EF;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;retryTemplate&#x6269;&#x5C55;retry&#x673A;&#x5236;&#x3002;</p>
+<pre><code class="lang-xml">
+!--&#x5B9A;&#x4E49;rabbit template&#x7528;&#x4E8E;&#x6570;&#x636E;&#x7684;&#x63A5;&#x6536;&#x548C;&#x53D1;&#x9001; --&gt;
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:template</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;amqpTemplate&quot;</span> <span class="hljs-attr">connection-factory</span>=<span class="hljs-string">&quot;connectionFactory&quot;</span>
+
+ <span class="hljs-attr">routing-key</span>=<span class="hljs-string">&quot;queueTestKey&quot;</span> <span class="hljs-attr">exchange</span>=<span class="hljs-string">&quot;exchangeTest&quot;</span>/&gt;</span>
+</code></pre>
+<h3 id="56-&#x76D1;&#x542C;&#x961F;&#x5217;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x6536;&#x6D88;&#x606F;&#xFF09;">5.6 &#x76D1;&#x542C;&#x961F;&#x5217;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x6536;&#x6D88;&#x606F;&#xFF09;</h3>
+<p>&#x901A;&#x8FC7;container&#x5BB9;&#x6613;&#x58F0;&#x660E;&#x76D1;&#x542C;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x914D;&#x7F6E;&#x76D1;&#x542C;&#x6240;&#x9700;&#x961F;&#x5217;&#x540D;&#x79F0;&#x548C;&#x76D1;&#x542C;&#x7684;&#x65B9;&#x6CD5;messageRciver</p>
+<pre><code class="lang-xml">
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:listener-container</span>
+
+ <span class="hljs-attr">connection-factory</span>=<span class="hljs-string">&quot;connectionFactory&quot;</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">rabbit:listener</span> <span class="hljs-attr">queues</span>=<span class="hljs-string">&quot;queueTest&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;messageReceiver&quot;</span> /&gt;</span>
+
+ <span class="hljs-tag">&lt;/<span class="hljs-name">rabbit:listener-container</span>&gt;</span>
+
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;messageRecevicer&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;com.hand.hap.QueueListenter&quot;</span>&gt;</span>
+</code></pre>
+<p>&#x961F;&#x5217;&#x76D1;&#x542C;java&#x7C7B;</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">QueueListenter</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">MessageListener</span> </span>{
+
+ <span class="hljs-meta">@Override</span>
+ <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onMessage</span><span class="hljs-params">(Message msg)</span> </span>{
+ <span class="hljs-comment">//&#x76F8;&#x5173;&#x4E1A;&#x52A1;&#x5904;&#x7406;</span>
+ }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="webservice-cxf.html" class="navigation navigation-prev " aria-label="Previous page: 3.4 发布 WebService">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="profile.html" class="navigation navigation-next " aria-label="Next page: 3.6 配置维护  ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.5 消息机制  ","level":"2.3.5","depth":2,"next":{"title":"3.6 配置维护  ","level":"2.3.6","depth":2,"path":"profile.md","ref":"profile.md","articles":[]},"previous":{"title":"3.4 发布 WebService","level":"2.3.4","depth":2,"path":"webservice-cxf.md","ref":"webservice-cxf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"family":"Microsoft YaHei","size":1},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Microsoft YaHei","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"HAP Developer Guide","gitbook":"*","description":"HAP Developer Guide"},"file":{"path":"message.md","mtime":"2018-09-04T07:28:33.390Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T10:57:11.176Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

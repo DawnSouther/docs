@@ -1,0 +1,1473 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.1 CAS 集成 · HAP Developer Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ldap-config.html" />
+    
+    
+    <link rel="prev" href="iii-hou-duan-kai-fa.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    GitBook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="changes-35.html">
+            
+                <a href="changes-35.html">
+            
+                    
+                    3.5更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="changes-31.html">
+            
+                <a href="changes-31.html">
+            
+                    
+                    3.1更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="changes-30.html">
+            
+                <a href="changes-30.html">
+            
+                    
+                    3.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changes-20.html">
+            
+                <a href="changes-20.html">
+            
+                    
+                    2.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="change-20-tables.html">
+            
+                <a href="change-20-tables.html">
+            
+                    
+                    2.0表结构变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                <a href="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                    
+                    I. 开发环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="git-guide.html">
+            
+                <a href="git-guide.html">
+            
+                    
+                    1.1 Git 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    1.2 Maven 使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="system-requirements.html">
+            
+                <a href="system-requirements.html">
+            
+                    
+                    1.3 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="database-init.html">
+            
+                <a href="database-init.html">
+            
+                    
+                    1.4 创建数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="database-config.html">
+            
+                <a href="database-config.html">
+            
+                    
+                    1.5 MySql, Oracle, SQL Server 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="project-create.html">
+            
+                <a href="project-create.html">
+            
+                    
+                    1.6 新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="project-update.html">
+            
+                <a href="project-update.html">
+            
+                    
+                    1.7 更新项目的HAP依赖版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="liquibase-use.html">
+            
+                <a href="liquibase-use.html">
+            
+                    
+                    1.8 Liquibase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="multi-data-source.html">
+            
+                <a href="multi-data-source.html">
+            
+                    
+                    1.9 多数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                <a href="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                    
+                    II. 项目开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="backend-dev_principle.html">
+            
+                <a href="backend-dev_principle.html">
+            
+                    
+                    2.1 项目开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="code-guide/front-code-guide.html">
+            
+                <a href="code-guide/front-code-guide.html">
+            
+                    
+                    2.2 前端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="code-guide/back-code-guide.html">
+            
+                <a href="code-guide/back-code-guide.html">
+            
+                    
+                    2.3 后端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="checkstyle.html">
+            
+                <a href="checkstyle.html">
+            
+                    
+                    2.4 Checkstyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="iii-hou-duan-kai-fa.html">
+            
+                <a href="iii-hou-duan-kai-fa.html">
+            
+                    
+                    III. 后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.3.1" data-path="security-cas.html">
+            
+                <a href="security-cas.html">
+            
+                    
+                    3.1 CAS 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ldap-config.html">
+            
+                <a href="ldap-config.html">
+            
+                    
+                    3.2 LDAP 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ldap-server.html">
+            
+                <a href="ldap-server.html">
+            
+                    
+                    3.3 LDAP 服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.4 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    3.5 消息机制  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    3.6 配置维护  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="user-security-strategy.html">
+            
+                <a href="user-security-strategy.html">
+            
+                    
+                    3.7 用户安全策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="sso-describe.html">
+            
+                <a href="sso-describe.html">
+            
+                    
+                    3.8 单点登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    3.9 锁机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="audit.html">
+            
+                <a href="audit.html">
+            
+                    
+                    3.10 审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="multi-language.html">
+            
+                <a href="multi-language.html">
+            
+                    
+                    3.11 数据多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    3.12 MyBatis 使用手册  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="mybatis2.html">
+            
+                <a href="mybatis2.html">
+            
+                    
+                    3.13 MyBatis 注意事项  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="elk.html">
+            
+                <a href="elk.html">
+            
+                    
+                    3.14 日志管理 ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="code-generator.html">
+            
+                <a href="code-generator.html">
+            
+                    
+                    3.15 代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    3.16 防止 CSRF 攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="dev-flow.html">
+            
+                <a href="dev-flow.html">
+            
+                    
+                    3.17 开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.18 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="activiti.html">
+            
+                <a href="activiti.html">
+            
+                    
+                    3.19 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="activiti-demo-vacation.html">
+            
+                <a href="activiti-demo-vacation.html">
+            
+                    
+                    3.19.1 工作流demo-请假申请
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    3.20 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="excel.html">
+            
+                <a href="excel.html">
+            
+                    
+                    3.21 EXCEL导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="sys-resource-item.html">
+            
+                <a href="sys-resource-item.html">
+            
+                    
+                    3.22 权限组件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="3.24-cors.html">
+            
+                <a href="3.24-cors.html">
+            
+                    
+                    3.23 跨域访问（CORS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.25" data-path="flex-field.html">
+            
+                <a href="flex-field.html">
+            
+                    
+                    3.24 弹性域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.26" data-path="code-rule.html">
+            
+                <a href="code-rule.html">
+            
+                    
+                    3.25 编码规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.27" data-path="data-permission.html">
+            
+                <a href="data-permission.html">
+            
+                    
+                    3.26 数据屏蔽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.28" data-path="mongodb-integration.html">
+            
+                <a href="mongodb-integration.html">
+            
+                    
+                    3.27 MongoDB 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.29" data-path="sys-report.html">
+            
+                <a href="sys-report.html">
+            
+                    
+                    3.28 报表管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.30" data-path="api-server-manager.html">
+            
+                <a href="api-server-manager.html">
+            
+                    
+                    3.29 服务治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.31" data-path="task-manage.html">
+            
+                <a href="task-manage.html">
+            
+                    
+                    3.30 任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="iv-qian-duan-kai-fa.html">
+            
+                <a href="iv-qian-duan-kai-fa.html">
+            
+                    
+                    IV. 前端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="front-ligerui.html">
+            
+                <a href="front-ligerui.html">
+            
+                    
+                    4.0 前端开发说明 (1.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="front-kendoui.html">
+            
+                <a href="front-kendoui.html">
+            
+                    
+                    4.1 前端开发说明 (2.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="kendo-form.html">
+            
+                <a href="kendo-form.html">
+            
+                    
+                    4.2 kendoUI Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="kendo-grid.html">
+            
+                <a href="kendo-grid.html">
+            
+                    
+                    4.3 kendoUI Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="kendo-lov.html">
+            
+                <a href="kendo-lov.html">
+            
+                    
+                    4.4 kendoUI Lov
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="kendo-upload.html">
+            
+                <a href="kendo-upload.html">
+            
+                    
+                    4.5 kendoUI Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="kendo-validator.html">
+            
+                <a href="kendo-validator.html">
+            
+                    
+                    4.6 kendoUI Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" >
+            
+                <span>
+            
+                    
+                    4.7 标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.8.1" data-path="kendo-tag-button.html">
+            
+                <a href="kendo-tag-button.html">
+            
+                    
+                    4.7.1 Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.2" data-path="kendo-tag-checkbox.html">
+            
+                <a href="kendo-tag-checkbox.html">
+            
+                    
+                    4.7.2 CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.3" data-path="kendo-tag-combobox.html">
+            
+                <a href="kendo-tag-combobox.html">
+            
+                    
+                    4.7.3 ComboBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.4" data-path="kendo-tag-dataSource.html">
+            
+                <a href="kendo-tag-dataSource.html">
+            
+                    
+                    4.7.4 DataSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.5" data-path="kendo-tag-datePicker.html">
+            
+                <a href="kendo-tag-datePicker.html">
+            
+                    
+                    4.7.5 DatePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.6" data-path="kendo-tag-dateTimePicker.html">
+            
+                <a href="kendo-tag-dateTimePicker.html">
+            
+                    
+                    4.7.6 DateTimePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.7" data-path="kendo-tag-dropDownList.html">
+            
+                <a href="kendo-tag-dropDownList.html">
+            
+                    
+                    4.7.7 DropDownList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.8" data-path="kendo-tag-grid.html">
+            
+                <a href="kendo-tag-grid.html">
+            
+                    
+                    4.7.8 Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.9" data-path="kendo-tag-lov.html">
+            
+                <a href="kendo-tag-lov.html">
+            
+                    
+                    4.7.9 LOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.10" data-path="kendo-tag-maskedTextBox.html">
+            
+                <a href="kendo-tag-maskedTextBox.html">
+            
+                    
+                    4.7.10 MaskedTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.11" data-path="kendo-tag-numbericTextBox.html">
+            
+                <a href="kendo-tag-numbericTextBox.html">
+            
+                    
+                    4.7.11 NumbericTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.12" data-path="kendo-tag-queryPanel.html">
+            
+                <a href="kendo-tag-queryPanel.html">
+            
+                    
+                    4.7.12 QueryPanel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.13" data-path="kendo-tag-radio.html">
+            
+                <a href="kendo-tag-radio.html">
+            
+                    
+                    4.7.13 Radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.14" data-path="kendo-tag-tabStrip.html">
+            
+                <a href="kendo-tag-tabStrip.html">
+            
+                    
+                    4.7.14 TabStrip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.15" data-path="kendo-tag-tlEdit.html">
+            
+                <a href="kendo-tag-tlEdit.html">
+            
+                    
+                    4.7.15 TLEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.16" data-path="kendo-tag-treeList.html">
+            
+                <a href="kendo-tag-treeList.html">
+            
+                    
+                    4.7.16 TreeList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.17" data-path="kendo-tag-treeView.html">
+            
+                <a href="kendo-tag-treeView.html">
+            
+                    
+                    4.7.17 TreeView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="kendo-tag-merge.html">
+            
+                <a href="kendo-tag-merge.html">
+            
+                    
+                    4.8 标签合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="ui-builder.html">
+            
+                <a href="ui-builder.html">
+            
+                    
+                    4.9 表单设计器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    [V. 框架功能描述]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="sys-user.html">
+            
+                <a href="sys-user.html">
+            
+                    
+                    5.1 用户管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="if-manage-introduce.html">
+            
+                <a href="if-manage-introduce.html">
+            
+                    
+                    5.2 接口管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="sys-job.html">
+            
+                <a href="sys-job.html">
+            
+                    
+                    5.3 计划任务功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="activiti-helper.html">
+            
+                <a href="activiti-helper.html">
+            
+                    
+                    5.4 工作流功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.1 CAS 集成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cas&#x96C6;&#x6210;">CAS&#x96C6;&#x6210;</h1>
+<p>CAS &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x4E0D;&#x542F;&#x7528;&#x7684;&#xFF0C;&#x542F;&#x7528;CAS SSO&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h2 id="1-&#x4FEE;&#x6539;-applicationcontext-securityxml">1 &#x4FEE;&#x6539; applicationContext-security.xml</h2>
+<p>&#x5728;&#x65B0;&#x9879;&#x76EE;&#x7684;src/main/resources/spring&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x589E;&#x6587;&#x4EF6;applicationContext-security.xml&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">beans:beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/security&quot;</span>
+             <span class="hljs-attr">xmlns:beans</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+             <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+             <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+                                 http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:import</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">&quot;oauth2Security.xml&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x6839;&#x636E;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x9009;&#x62E9;&#x4F7F;&#x7528;CAS&#x6216;&#x6807;&#x51C6;&#x767B;&#x5F55;&#x65B9;&#x5F0F;  --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">beans:import</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">&quot;casSecurity.xml&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!--&lt;beans:import resource=&quot;standardSecurity.xml&quot;/&gt;--&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">beans:beans</span>&gt;</span>
+</code></pre>
+<h2 id="2-&#x4FEE;&#x6539;-configproperties">2 &#x4FEE;&#x6539; config.properties</h2>
+<p>&#x4FEE;&#x6539; src/main/resources/config.properties &#x6587;&#x4EF6;&#xFF0C;&#x5C06;&#x5176;&#x4E2D;&#x7684;CAS&#x90E8;&#x5206;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre><code class="lang-properties">#CAS
+#&#x672C;&#x7CFB;&#x7EDF;&#x5730;&#x5740;&#xFF0C;&#x540E;&#x9762;&#x7684;/login/cas&#x5FC5;&#x987B;&#x6709;
+cas.service=http://localhost:8080/hap/login/cas
+#cas&#x670D;&#x52A1;&#x5668;&#x767B;&#x5F55;&#x5730;&#x5740;
+cas.ssoserver.loginurl=https://login.hand-china.com/sso/login
+#sso&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;
+cas.ssoserver.url=https://login.hand-china.com/sso
+# SSO&#x670D;&#x52A1;&#x5668;&#x9000;&#x51FA;&#x5730;&#x5740;&#xFF0C;&#x540E;&#x9762;&#x7684;http://localhost:8080/hap&#xFF0C;&#x6839;&#x636E;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;
+cas.ssoserver.logouturl=https://login.hand-china.com/sso/logout?service=http://localhost:8080/hap
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4EE5;&#x4E0A;&#x5185;&#x5BB9;&#x4E2D;&#xFF1A;&#x7AEF;&#x53E3; <code>8080</code> &#xFF0C;&#x8DEF;&#x5F84; <code>hap</code>  &#x9700;&#x8981;&#x6309;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;</p>
+</blockquote>
+<h2 id="3-&#x751F;&#x6210;&#x8BC1;&#x4E66;">3 &#x751F;&#x6210;&#x8BC1;&#x4E66;</h2>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x5BFC;&#x5165;CAS&#x670D;&#x52A1;&#x5668;&#x7684;https&#x5BC6;&#x94A5;&#xFF0C;&#x4EE5;login.hand-china.com&#x4E3A;&#x4F8B;</p>
+<ul>
+<li>&#x5728;core&#x5B50;&#x9879;&#x76EE;&#x4E0B;&#x6267;&#x884C;</li>
+</ul>
+<pre><code class="lang-bash">  mvn <span class="hljs-built_in">exec</span>:<span class="hljs-built_in">exec</span> -Dexec.executable=<span class="hljs-string">&quot;java&quot;</span>  -Dexec.args=<span class="hljs-string">&quot;-classpath  <span class="hljs-variable">${basedir}</span>/target/core/WEB-INF/classes com.hand.hap.security.InstallCert login.hand-china.com:443 &quot;</span>
+</code></pre>
+<ul>
+<li>&#x5982;&#x679C;&#x662F;HAP&#x6E90;&#x7801;&#x9879;&#x76EE;&#xFF0C;&#x5728;hap&#x5B50;&#x9879;&#x76EE;&#x4E0B;&#x6267;&#x884C;<pre><code class="lang-bash">mvn <span class="hljs-built_in">exec</span>:java -Dexec.mainClass=<span class="hljs-string">&quot;com.hand.hap.security.InstallCert&quot;</span> -Dexec.args=<span class="hljs-string">&quot;login.hand-china.com:443&quot;</span>
+</code></pre>
+</li>
+<li>&#x63A5;&#x4E0B;&#x6765;&#x63D0;&#x53D6;&#x5BC6;&#x94A5;</li>
+</ul>
+<pre><code class="lang-bash">keytool -exportcert -alias [host&#x4FEE;&#x6539;&#x5982;hand-china.com]-1 -keystore jssecacerts -storepass changeit -file [host&#x4FEE;&#x6539;&#x5982;hand-china.com].cer
+</code></pre>
+<blockquote>
+<p>&#x793A;&#x4F8B;</p>
+<blockquote>
+<p>keytool -exportcert -alias login.hand-china.com-1 -keystore jssecacerts -storepass changeit -file hand-china.com.cer</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>&#x5BFC;&#x5165;&#x5BC6;&#x94A5;</li>
+</ul>
+<pre><code class="lang-bash">keytool -importcert -alias [host&#x4FEE;&#x6539;&#x5982;hand-china.com] -keystore [path to system keystore] -storepass changeit -file [host&#x4FEE;&#x6539;&#x5982;hand-china.com].cer
+</code></pre>
+<blockquote>
+<p>&#x793A;&#x4F8B;</p>
+<blockquote>
+<p>keytool -importcert -alias hand-china.com -keystore cas_xx -storepass changeit -file hand-china.com.cer</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>&#x5C06; jssecacerts &#x62F7;&#x8D1D; &#x5230; $JAVA_HOME/jre/lib/security</li>
+<li>&#x5B8C;&#x6210;&#x540E;&#x5220;&#x9664;&#x751F;&#x6210;&#x7684;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;</li>
+</ul>
+<h2 id="4-&#x51C6;&#x5907;&#x7528;&#x6237;">4 &#x51C6;&#x5907;&#x7528;&#x6237;</h2>
+<p>&#x5728;&#x767B;&#x5F55;&#x4E4B;&#x524D;&#x8981;&#x786E;&#x8BA4;&#x7528;&#x6237;&#x540D;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x4E34;&#x65F6;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x5148;&#x5C06;admin&#x6539;&#x6210;SSO&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<blockquote>
+<p>&#x5EFA;&#x8BAE;&#x5728;&#x914D;&#x7F6E; CAS &#x4E4B;&#x524D;&#xFF0C;&#x7528; admin &#x767B;&#x5F55;&#x7CFB;&#x7EDF;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x7528;&#x6237;&#x540D;&#x4E3A;&#x4F60;&#x7684;&#x5DE5;&#x53F7;&#xFF0C;&#x5E76;&#x5206;&#x914D;&#x5408;&#x9002;&#x7684;&#x89D2;&#x8272;</p>
+</blockquote>
+<p>&#x5B8C;&#x6210;&#x4E0A;&#x9762;4&#x4E2A;&#x6B65;&#x9AA4;&#x540E;&#xFF0C;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x9879;&#x76EE;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="iii-hou-duan-kai-fa.html" class="navigation navigation-prev " aria-label="Previous page: III. 后端开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ldap-config.html" class="navigation navigation-next " aria-label="Next page: 3.2 LDAP 验证">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.1 CAS 集成","level":"2.3.1","depth":2,"next":{"title":"3.2 LDAP 验证","level":"2.3.2","depth":2,"path":"ldap-config.md","ref":"ldap-config.md","articles":[]},"previous":{"title":"III. 后端开发","level":"2.3","depth":1,"path":"iii-hou-duan-kai-fa.md","ref":"iii-hou-duan-kai-fa.md","articles":[{"title":"3.1 CAS 集成","level":"2.3.1","depth":2,"path":"security-cas.md","ref":"security-cas.md","articles":[]},{"title":"3.2 LDAP 验证","level":"2.3.2","depth":2,"path":"ldap-config.md","ref":"ldap-config.md","articles":[]},{"title":"3.3 LDAP 服务器搭建","level":"2.3.3","depth":2,"path":"ldap-server.md","ref":"ldap-server.md","articles":[]},{"title":"3.4 发布 WebService","level":"2.3.4","depth":2,"path":"webservice-cxf.md","ref":"webservice-cxf.md","articles":[]},{"title":"3.5 消息机制  ","level":"2.3.5","depth":2,"path":"message.md","ref":"message.md","articles":[]},{"title":"3.6 配置维护  ","level":"2.3.6","depth":2,"path":"profile.md","ref":"profile.md","articles":[]},{"title":"3.7 用户安全策略","level":"2.3.7","depth":2,"path":"user-security-strategy.md","ref":"user-security-strategy.md","articles":[]},{"title":"3.8 单点登录","level":"2.3.8","depth":2,"path":"sso-describe.md","ref":"sso-describe.md","articles":[]},{"title":"3.9 锁机制","level":"2.3.9","depth":2,"path":"lock.md","ref":"lock.md","articles":[]},{"title":"3.10 审计","level":"2.3.10","depth":2,"path":"audit.md","ref":"audit.md","articles":[]},{"title":"3.11 数据多语言","level":"2.3.11","depth":2,"path":"multi-language.md","ref":"multi-language.md","articles":[]},{"title":"3.12 MyBatis 使用手册  ","level":"2.3.12","depth":2,"path":"mybatis.md","ref":"mybatis.md","articles":[]},{"title":"3.13 MyBatis 注意事项  ","level":"2.3.13","depth":2,"path":"mybatis2.md","ref":"mybatis2.md","articles":[]},{"title":"3.14 日志管理 ELK","level":"2.3.14","depth":2,"path":"elk.md","ref":"elk.md","articles":[]},{"title":"3.15 代码生成器","level":"2.3.15","depth":2,"path":"code-generator.md","ref":"code-generator.md","articles":[]},{"title":"3.16 防止 CSRF 攻击","level":"2.3.16","depth":2,"path":"csrf.md","ref":"csrf.md","articles":[]},{"title":"3.17 开发流程","level":"2.3.17","depth":2,"path":"dev-flow.md","ref":"dev-flow.md","articles":[]},{"title":"3.18 发布 WebService","level":"2.3.18","depth":2,"path":"webservice-cxf.md","ref":"webservice-cxf.md","articles":[]},{"title":"3.19 工作流","level":"2.3.19","depth":2,"path":"activiti.md","ref":"activiti.md","articles":[]},{"title":"3.19.1 工作流demo-请假申请","level":"2.3.20","depth":2,"path":"activiti-demo-vacation.md","ref":"activiti-demo-vacation.md","articles":[]},{"title":"3.20 部署","level":"2.3.21","depth":2,"path":"deployment.md","ref":"deployment.md","articles":[]},{"title":"3.21 EXCEL导入导出","level":"2.3.22","depth":2,"path":"excel.md","ref":"excel.md","articles":[]},{"title":"3.22 权限组件管理","level":"2.3.23","depth":2,"path":"sys-resource-item.md","ref":"sys-resource-item.md","articles":[]},{"title":"3.23 跨域访问（CORS）","level":"2.3.24","depth":2,"path":"3.24-cors.md","ref":"3.24-cors.md","articles":[]},{"title":"3.24 弹性域","level":"2.3.25","depth":2,"path":"flex-field.md","ref":"flex-field.md","articles":[]},{"title":"3.25 编码规则","level":"2.3.26","depth":2,"path":"code-rule.md","ref":"code-rule.md","articles":[]},{"title":"3.26 数据屏蔽","level":"2.3.27","depth":2,"path":"data-permission.md","ref":"data-permission.md","articles":[]},{"title":"3.27 MongoDB 集成","level":"2.3.28","depth":2,"path":"mongodb-integration.md","ref":"mongodb-integration.md","articles":[]},{"title":"3.28 报表管理","level":"2.3.29","depth":2,"path":"sys-report.md","ref":"sys-report.md","articles":[]},{"title":"3.29 服务治理","level":"2.3.30","depth":2,"path":"api-server-manager.md","ref":"api-server-manager.md","articles":[]},{"title":"3.30 任务管理","level":"2.3.31","depth":2,"path":"task-manage.md","ref":"task-manage.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"family":"Microsoft YaHei","size":1},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Microsoft YaHei","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"HAP Developer Guide","gitbook":"*","description":"HAP Developer Guide"},"file":{"path":"security-cas.md","mtime":"2018-09-04T07:28:33.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T10:57:11.176Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

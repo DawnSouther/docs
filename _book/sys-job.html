@@ -1,0 +1,1630 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.3 计划任务功能描述 · HAP Developer Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="activiti-helper.html" />
+    
+    
+    <link rel="prev" href="if-manage-introduce.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    GitBook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="changes-35.html">
+            
+                <a href="changes-35.html">
+            
+                    
+                    3.5更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="changes-31.html">
+            
+                <a href="changes-31.html">
+            
+                    
+                    3.1更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="changes-30.html">
+            
+                <a href="changes-30.html">
+            
+                    
+                    3.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changes-20.html">
+            
+                <a href="changes-20.html">
+            
+                    
+                    2.0更新汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="change-20-tables.html">
+            
+                <a href="change-20-tables.html">
+            
+                    
+                    2.0表结构变化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                <a href="i-kai-fa-huan-jing-zhun-bei.html">
+            
+                    
+                    I. 开发环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="git-guide.html">
+            
+                <a href="git-guide.html">
+            
+                    
+                    1.1 Git 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                    1.2 Maven 使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="system-requirements.html">
+            
+                <a href="system-requirements.html">
+            
+                    
+                    1.3 开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="database-init.html">
+            
+                <a href="database-init.html">
+            
+                    
+                    1.4 创建数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="database-config.html">
+            
+                <a href="database-config.html">
+            
+                    
+                    1.5 MySql, Oracle, SQL Server 数据库配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="project-create.html">
+            
+                <a href="project-create.html">
+            
+                    
+                    1.6 新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="project-update.html">
+            
+                <a href="project-update.html">
+            
+                    
+                    1.7 更新项目的HAP依赖版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="liquibase-use.html">
+            
+                <a href="liquibase-use.html">
+            
+                    
+                    1.8 Liquibase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="multi-data-source.html">
+            
+                <a href="multi-data-source.html">
+            
+                    
+                    1.9 多数据源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                <a href="ii-xiang-mu-kai-fa-gui-fan.html">
+            
+                    
+                    II. 项目开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="backend-dev_principle.html">
+            
+                <a href="backend-dev_principle.html">
+            
+                    
+                    2.1 项目开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="code-guide/front-code-guide.html">
+            
+                <a href="code-guide/front-code-guide.html">
+            
+                    
+                    2.2 前端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="code-guide/back-code-guide.html">
+            
+                <a href="code-guide/back-code-guide.html">
+            
+                    
+                    2.3 后端编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="checkstyle.html">
+            
+                <a href="checkstyle.html">
+            
+                    
+                    2.4 Checkstyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="iii-hou-duan-kai-fa.html">
+            
+                <a href="iii-hou-duan-kai-fa.html">
+            
+                    
+                    III. 后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="security-cas.html">
+            
+                <a href="security-cas.html">
+            
+                    
+                    3.1 CAS 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ldap-config.html">
+            
+                <a href="ldap-config.html">
+            
+                    
+                    3.2 LDAP 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ldap-server.html">
+            
+                <a href="ldap-server.html">
+            
+                    
+                    3.3 LDAP 服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.4 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    3.5 消息机制  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    3.6 配置维护  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="user-security-strategy.html">
+            
+                <a href="user-security-strategy.html">
+            
+                    
+                    3.7 用户安全策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="sso-describe.html">
+            
+                <a href="sso-describe.html">
+            
+                    
+                    3.8 单点登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    3.9 锁机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="audit.html">
+            
+                <a href="audit.html">
+            
+                    
+                    3.10 审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="multi-language.html">
+            
+                <a href="multi-language.html">
+            
+                    
+                    3.11 数据多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    3.12 MyBatis 使用手册  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="mybatis2.html">
+            
+                <a href="mybatis2.html">
+            
+                    
+                    3.13 MyBatis 注意事项  
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="elk.html">
+            
+                <a href="elk.html">
+            
+                    
+                    3.14 日志管理 ELK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="code-generator.html">
+            
+                <a href="code-generator.html">
+            
+                    
+                    3.15 代码生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    3.16 防止 CSRF 攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="dev-flow.html">
+            
+                <a href="dev-flow.html">
+            
+                    
+                    3.17 开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="webservice-cxf.html">
+            
+                <a href="webservice-cxf.html">
+            
+                    
+                    3.18 发布 WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="activiti.html">
+            
+                <a href="activiti.html">
+            
+                    
+                    3.19 工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="activiti-demo-vacation.html">
+            
+                <a href="activiti-demo-vacation.html">
+            
+                    
+                    3.19.1 工作流demo-请假申请
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    3.20 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="excel.html">
+            
+                <a href="excel.html">
+            
+                    
+                    3.21 EXCEL导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="sys-resource-item.html">
+            
+                <a href="sys-resource-item.html">
+            
+                    
+                    3.22 权限组件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="3.24-cors.html">
+            
+                <a href="3.24-cors.html">
+            
+                    
+                    3.23 跨域访问（CORS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.25" data-path="flex-field.html">
+            
+                <a href="flex-field.html">
+            
+                    
+                    3.24 弹性域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.26" data-path="code-rule.html">
+            
+                <a href="code-rule.html">
+            
+                    
+                    3.25 编码规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.27" data-path="data-permission.html">
+            
+                <a href="data-permission.html">
+            
+                    
+                    3.26 数据屏蔽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.28" data-path="mongodb-integration.html">
+            
+                <a href="mongodb-integration.html">
+            
+                    
+                    3.27 MongoDB 集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.29" data-path="sys-report.html">
+            
+                <a href="sys-report.html">
+            
+                    
+                    3.28 报表管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.30" data-path="api-server-manager.html">
+            
+                <a href="api-server-manager.html">
+            
+                    
+                    3.29 服务治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.31" data-path="task-manage.html">
+            
+                <a href="task-manage.html">
+            
+                    
+                    3.30 任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="iv-qian-duan-kai-fa.html">
+            
+                <a href="iv-qian-duan-kai-fa.html">
+            
+                    
+                    IV. 前端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="front-ligerui.html">
+            
+                <a href="front-ligerui.html">
+            
+                    
+                    4.0 前端开发说明 (1.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="front-kendoui.html">
+            
+                <a href="front-kendoui.html">
+            
+                    
+                    4.1 前端开发说明 (2.0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="kendo-form.html">
+            
+                <a href="kendo-form.html">
+            
+                    
+                    4.2 kendoUI Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="kendo-grid.html">
+            
+                <a href="kendo-grid.html">
+            
+                    
+                    4.3 kendoUI Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="kendo-lov.html">
+            
+                <a href="kendo-lov.html">
+            
+                    
+                    4.4 kendoUI Lov
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="kendo-upload.html">
+            
+                <a href="kendo-upload.html">
+            
+                    
+                    4.5 kendoUI Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="kendo-validator.html">
+            
+                <a href="kendo-validator.html">
+            
+                    
+                    4.6 kendoUI Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" >
+            
+                <span>
+            
+                    
+                    4.7 标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.8.1" data-path="kendo-tag-button.html">
+            
+                <a href="kendo-tag-button.html">
+            
+                    
+                    4.7.1 Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.2" data-path="kendo-tag-checkbox.html">
+            
+                <a href="kendo-tag-checkbox.html">
+            
+                    
+                    4.7.2 CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.3" data-path="kendo-tag-combobox.html">
+            
+                <a href="kendo-tag-combobox.html">
+            
+                    
+                    4.7.3 ComboBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.4" data-path="kendo-tag-dataSource.html">
+            
+                <a href="kendo-tag-dataSource.html">
+            
+                    
+                    4.7.4 DataSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.5" data-path="kendo-tag-datePicker.html">
+            
+                <a href="kendo-tag-datePicker.html">
+            
+                    
+                    4.7.5 DatePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.6" data-path="kendo-tag-dateTimePicker.html">
+            
+                <a href="kendo-tag-dateTimePicker.html">
+            
+                    
+                    4.7.6 DateTimePicker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.7" data-path="kendo-tag-dropDownList.html">
+            
+                <a href="kendo-tag-dropDownList.html">
+            
+                    
+                    4.7.7 DropDownList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.8" data-path="kendo-tag-grid.html">
+            
+                <a href="kendo-tag-grid.html">
+            
+                    
+                    4.7.8 Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.9" data-path="kendo-tag-lov.html">
+            
+                <a href="kendo-tag-lov.html">
+            
+                    
+                    4.7.9 LOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.10" data-path="kendo-tag-maskedTextBox.html">
+            
+                <a href="kendo-tag-maskedTextBox.html">
+            
+                    
+                    4.7.10 MaskedTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.11" data-path="kendo-tag-numbericTextBox.html">
+            
+                <a href="kendo-tag-numbericTextBox.html">
+            
+                    
+                    4.7.11 NumbericTextBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.12" data-path="kendo-tag-queryPanel.html">
+            
+                <a href="kendo-tag-queryPanel.html">
+            
+                    
+                    4.7.12 QueryPanel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.13" data-path="kendo-tag-radio.html">
+            
+                <a href="kendo-tag-radio.html">
+            
+                    
+                    4.7.13 Radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.14" data-path="kendo-tag-tabStrip.html">
+            
+                <a href="kendo-tag-tabStrip.html">
+            
+                    
+                    4.7.14 TabStrip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.15" data-path="kendo-tag-tlEdit.html">
+            
+                <a href="kendo-tag-tlEdit.html">
+            
+                    
+                    4.7.15 TLEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.16" data-path="kendo-tag-treeList.html">
+            
+                <a href="kendo-tag-treeList.html">
+            
+                    
+                    4.7.16 TreeList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8.17" data-path="kendo-tag-treeView.html">
+            
+                <a href="kendo-tag-treeView.html">
+            
+                    
+                    4.7.17 TreeView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="kendo-tag-merge.html">
+            
+                <a href="kendo-tag-merge.html">
+            
+                    
+                    4.8 标签合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="ui-builder.html">
+            
+                <a href="ui-builder.html">
+            
+                    
+                    4.9 表单设计器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    [V. 框架功能描述]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="sys-user.html">
+            
+                <a href="sys-user.html">
+            
+                    
+                    5.1 用户管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="if-manage-introduce.html">
+            
+                <a href="if-manage-introduce.html">
+            
+                    
+                    5.2 接口管理功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.3" data-path="sys-job.html">
+            
+                <a href="sys-job.html">
+            
+                    
+                    5.3 计划任务功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="activiti-helper.html">
+            
+                <a href="activiti-helper.html">
+            
+                    
+                    5.4 工作流功能描述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5.3 计划任务功能描述</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x529F;&#x80FD;">&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x529F;&#x80FD;</h1>
+<hr>
+<p>HAP&#x6846;&#x67B6;&#x652F;&#x6301;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7684;&#x5F00;&#x53D1;&#x548C;&#x4F7F;&#x7528;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x662F;&#x57FA;&#x4E8E;Quartz&#x8FD9;&#x4E2A;&#x5F00;&#x6E90;&#x7684;java&#x4F5C;&#x4E1A;&#x8C03;&#x5EA6;&#x6846;&#x67B6;,&#x6709;&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#xFF0C;&#x96C6;&#x7FA4;&#xFF0C;&#x63D2;&#x4EF6;&#xFF0C;JavaMail&#x53CA;&#x5176;&#x5B83;&#xFF0C;&#x652F;&#x6301;cron&#x8868;&#x8FBE;&#x5F0F;&#x7B49;&#x7279;&#x70B9;&#x3002;</p>
+<h2 id="quartz&#x96C6;&#x7FA4;&#x7279;&#x6027;&#xFF1A;">quartz&#x96C6;&#x7FA4;&#x7279;&#x6027;&#xFF1A;</h2>
+<blockquote>
+<p>1.quartz&#x662F;&#x901A;&#x8FC7;&#x501F;&#x52A9;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x548C;JDBC&#x4F5C;&#x4E1A;&#x5B58;&#x50A8;&#x6765;&#x5B9E;&#x73B0;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x7684;&#x3002;</p>
+<p>2.&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5171;&#x540C;&#x7684;quartz&#x6570;&#x636E;&#x5E93;&#x8868;&#xFF0C;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x81EA;&#x7136;&#x6784;&#x6210;quartz&#x96C6;&#x7FA4;&#x3002;</p>
+<p>3.&#x5F53;&#x6709;&#x4EFB;&#x52A1;&#x9700;&#x8981;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x901A;&#x8FC7;&#x62A2;&#x5360;&#x9501;(&#x6570;&#x636E;&#x5E93;&#x8868;)&#xFF0C;&#x6765;&#x540C;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x3002;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x6700;&#x597D;&#x540C;&#x6B65;&#xFF0C;&#x8BEF;&#x5DEE;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;&#x4E00;&#x79D2;&#xFF0C;&#x5426;&#x5219;&#x5176;&#x4E2D;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x5C06;&#x4E00;&#x76F4;&#x62A2;&#x5360;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>4.&#x96C6;&#x7FA4;&#x901A;&#x8FC7;&#x6545;&#x969C;&#x5207;&#x6362;&#x548C;&#x8D1F;&#x8F7D;&#x5E73;&#x8861;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x80FD;&#x7ED9;&#x8C03;&#x5EA6;&#x5668;&#x5E26;&#x6765;&#x9AD8;&#x53EF;&#x7528;&#x6027;&#x548C;&#x4F38;&#x7F29;&#x6027;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4EFB;&#x52A1;&#x660E;&#x7EC6;">&#x4EFB;&#x52A1;&#x660E;&#x7EC6;</h2>
+<p>HAP&#x652F;&#x6301;&#x4E24;&#x79CD;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;&#x4E00;&#x79CD;&#x662F;cron&#x4EFB;&#x52A1;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x7B80;&#x5355;&#x4EFB;&#x52A1;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;&#x8BBE;&#x7F6E;&#x5927;&#x4F53;&#x4E0A;&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;&#x5728;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x65F6;&#x95F4;&#x4E0A;&#xFF0C;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x4E86;cron&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x4E86;&#x91CD;&#x590D;&#x95F4;&#x9694;&#x548C;&#x91CD;&#x590D;&#x6B21;&#x6570;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#xFF1A;</p>
+<h3 id="&#x65B0;&#x5EFA;cron&#x4EFB;&#x52A1;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;">&#x65B0;&#x5EFA;cron&#x4EFB;&#x52A1;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;</h3>
+<blockquote>
+<p><img src="assets/script_job.png" alt=""></p>
+</blockquote>
+<h4 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;:</h4>
+<blockquote>
+<ol>
+<li><p>&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF1A;&#x53EF;&#x4EE5;&#x7531;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x6BCD;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x6784;&#x6210;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x5305;&#x542B;&#x4E2D;&#x6587;&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x7EC4;&#xFF1A;&#x4EFB;&#x52A1;&#x6240;&#x5728;&#x7684;&#x7EC4;&#x522B;&#x540D;&#x79F0;&#xFF0C;&#x65B9;&#x4FBF;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x3002;&#x4E0D;&#x586B;&#x5199;&#x9ED8;&#x8BA4;&#x4E3A;DEFAULT&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x63CF;&#x8FF0;&#xFF1A;&#x63CF;&#x8FF0;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x804C;&#x80FD;&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x7C7B;&#x540D;&#xFF1A;&#x6846;&#x67B6;&#x540E;&#x53F0;&#x7684;Job&#x5168;&#x7C7B;&#x540D;&#xFF0C;&#x5185;&#x7F6E;Job&#x7C7B;&#x7684;&#x6709;ScriptBasedJob&#x548C;SendMessageJob&#x3002;<strong>&#x4EFB;&#x52A1;&#x4E3B;&#x8981;&#x662F;&#x7531;Job&#x7C7B;&#x6267;&#x884C;</strong>&#x3002;</p>
+</li>
+<li><p>&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF1A;&#x8BE5;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x533A;&#x95F4;,&#x4E0D;&#x6307;&#x5B9A;&#x7684;&#x8BDD;&#xFF0C;&#x6267;&#x884C;&#x6240;&#x6709;cron&#x8868;&#x8FBE;&#x5F0F;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;</p>
+</li>
+<li><p>cron&#x8868;&#x8FBE;&#x5F0F;:&#x4F7F;&#x7528;cron&#x8868;&#x8FBE;&#x5F0F;&#x6307;&#x5B9A;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;<a href="http://jingyan.baidu.com/article/7f41ecec0d0724593d095c19.html" target="_blank">cron&#x8868;&#x8FBE;&#x5F0F;&#x8BE6;&#x60C5;</a></p>
+</li>
+<li><p>&#x65B0;&#x5EFA;&#x53C2;&#x6570;&#xFF1A;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x5236;&#x5B9A;&#x53C2;&#x6570;&#x540D;&#x79F0;&#x548C;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x540E;&#x53F0;&#x7684;Job&#x7C7B;&#x4E2D;&#x901A;&#x8FC7;context.getMergedJobDataMap().getString(&quot;&#x53C2;&#x6570;&#x540D;&quot;)&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="&#x65B0;&#x5EFA;&#x7B80;&#x5355;&#x4EFB;&#x52A1;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;">&#x65B0;&#x5EFA;&#x7B80;&#x5355;&#x4EFB;&#x52A1;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;</h3>
+<p><img src="assets/sample_job.png" alt=""></p>
+<h4 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;:</h4>
+<blockquote>
+<ol>
+<li><p>&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x4EFB;&#x52A1;&#x7EC4;&#xFF0C;&#x4EFB;&#x52A1;&#x63CF;&#x8FF0;&#xFF0C;&#x4EFB;&#x52A1;&#x7C7B;&#x540D;&#x540C;cron&#x4EFB;&#x52A1;</p>
+</li>
+<li><p>&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF1A;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x533A;&#x95F4;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x7684;&#x8BDD;&#xFF0C;&#x6267;&#x884C;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x91CD;&#x590D;&#x6B21;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x91CD;&#x590D;&#x95F4;&#x9694;&#xFF1A;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#x3002;</p>
+</li>
+<li><p>&#x91CD;&#x590D;&#x6B21;&#x6570;:&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x4E3A;0&#x8868;&#x793A;&#x4E00;&#x76F4;&#x6267;&#x884C;&#x3002;</p>
+</li>
+<li><p>&#x65B0;&#x5EFA;&#x53C2;&#x6570;&#x540C;cron&#x4EFB;&#x52A1;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="&#x7ED3;&#x675F;&#x901A;&#x77E5;">&#x7ED3;&#x675F;&#x901A;&#x77E5;</h3>
+<p>&#x5728;&#x65B0;&#x5EFA;cron&#x4EFB;&#x52A1;&#x548C;&#x7B80;&#x5355;&#x4EFB;&#x52A1;&#x65F6;&#x90FD;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x65F6;&#x7684;&#x6D88;&#x606F;&#x901A;&#x77E5;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;</p>
+<p><img src="assets/msg_job.png" alt=""></p>
+<blockquote>
+<p>&#x52FE;&#x9009;&#x542F;&#x7528;&#x901A;&#x77E5;&#x540E;&#xFF0C;&#x5F53;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x4F1A;&#x901A;&#x77E5;&#x76F8;&#x5E94;&#x7684;&#x7528;&#x6237;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4EFB;&#x52A1;&#x660E;&#x7EC6;&#x754C;&#x9762;&#x8BF4;&#x660E;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;">&#x4EFB;&#x52A1;&#x660E;&#x7EC6;&#x754C;&#x9762;&#x8BF4;&#x660E;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;</h3>
+<p><img src="assets/detail_job.png" alt=""></p>
+<h4 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;">&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</h4>
+<blockquote>
+<ol>
+<li>&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF1A;&#x70B9;&#x51FB;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;<strong>&#x67E5;&#x770B;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7684;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;</strong>&#x3002;</li>
+<li>&#x4EFB;&#x52A1;&#x7EC4;&#xFF1A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6240;&#x5C5E;&#x7EC4;&#x522B;&#x3002;</li>
+<li>&#x4EFB;&#x52A1;&#x7C7B;&#x540D;&#xFF1A;&#x6846;&#x67B6;&#x540E;&#x53F0;&#x7684;Job&#x5168;&#x7C7B;&#x540D;&#x3002;</li>
+<li>&#x4EFB;&#x52A1;&#x63CF;&#x8FF0;&#xFF1A;&#x5BF9;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x804C;&#x80FD;&#x63CF;&#x8FF0;&#x3002;</li>
+<li>&#x4E0A;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x4E0A;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#x9884;&#x8BA1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+<li>&#x8BA1;&#x5212;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x9884;&#x8BA1;&#x5B8C;&#x6210;&#x4E0A;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6267;&#x884C;&#x95F4;&#x9694;&#x63A8;&#x7B97;&#x7684;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x4E0B;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x9884;&#x8BA1;&#x6267;&#x884C;&#x5B8C;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6267;&#x884C;&#x95F4;&#x9694;&#x63A8;&#x7B97;&#x7684;&#x4E0B;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+<li>&#x5B9E;&#x9645;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+</ol>
+</blockquote>
+<h4 id="&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#x663E;&#x793A;&#x989C;&#x8272;">&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#x663E;&#x793A;&#x989C;&#x8272;</h4>
+<blockquote>
+<ol>
+<li><p>&#x6B63;&#x5728;&#x6267;&#x884C;&#xFF0C;&#x989C;&#x8272;&#x663E;&#x793A;&#x4E3A;&#x7EFF;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x53D1;&#x751F;&#x5F02;&#x5E38;&#xFF0C;&#x989C;&#x8272;&#x663E;&#x793A;&#x4E3A;&#x7EA2;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x6682;&#x505C;&#xFF0C;&#x989C;&#x8272;&#x663E;&#x793A;&#x4E3A;&#x6A59;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#xFF0C;&#x989C;&#x8272;&#x663E;&#x793A;&#x4E3A;&#x7070;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x963B;&#x585E;&#xFF0C;&#x989C;&#x8272;&#x663E;&#x793A;&#x4E3A;&#x9ED1;&#x8272;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</h4>
+<blockquote>
+<ol>
+<li><p>&#x9009;&#x4E2D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;&#x70B9;&#x51FB;&#x6682;&#x505C;&#x6309;&#x94AE;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x5C06;&#x88AB;&#x6302;&#x8D77;&#xFF0C;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#x989C;&#x8272;&#x53D8;&#x4E3A;&#x6A59;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;&#x70B9;&#x51FB;&#x6062;&#x590D;&#x6309;&#x94AE;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x5C06;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#x989C;&#x8272;&#x53D8;&#x4E3A;&#x7EFF;&#x8272;&#x3002;</p>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;&#x70B9;&#x51FB;&#x5220;&#x9664;&#x6309;&#x94AE;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x5C06;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x4EFB;&#x52A1;&#x5BF9;&#x5E94;&#x7684;<strong>&#x6240;&#x6709;&#x6267;&#x884C;&#x8BB0;&#x5F55;&#x4E5F;&#x5C06;&#x88AB;&#x5220;&#x9664;</strong>&#x3002;</p>
+</li>
+<li><p>&#x6BCF;&#x6267;&#x884C;&#x5B8C;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x8BB0;&#x5F55;&#x4E2D;&#x5C31;&#x4F1A;&#x6709;&#x4E00;&#x6761;&#x5BF9;&#x5E94;&#x7684;&#x6267;&#x884C;&#x4FE1;&#x606F;&#xFF0C;<strong>&#x5F53;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5C06;&#x4ECE;&#x4EFB;&#x52A1;&#x660E;&#x7EC6;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x9664;</strong>&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="&#x6846;&#x67B6;&#x5185;&#x7F6E;job&#x7C7B;">&#x6846;&#x67B6;&#x5185;&#x7F6E;Job&#x7C7B;</h3>
+<h4 id="&#x5185;&#x7F6E;&#x7684;scriptbasejob&#x7C7B;">&#x5185;&#x7F6E;&#x7684;ScriptBaseJob&#x7C7B;:</h4>
+<h5 id="&#x529F;&#x80FD;&#x5B9A;&#x4E49;&#xFF1A;">&#x529F;&#x80FD;&#x5B9A;&#x4E49;&#xFF1A;</h5>
+<blockquote>
+<p>&#x5728;&#x6846;&#x67B6;&#x5185;&#x5B9A;&#x65F6;&#x6267;&#x884C;&#x6307;&#x5B9A;JavaScript&#x811A;&#x672C;&#x7684;Job&#x3002;</p>
+</blockquote>
+<h5 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;">&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</h5>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x5206;&#x522B;&#x4E3A;</p>
+<ol>
+<li><p>scriptName&#xFF1A;JavaScript&#x811A;&#x672C;&#x540D;&#x79F0;&#x3002;</p>
+</li>
+<li><p>scriptFile&#xFF1A;JavaScript&#x811A;&#x672C;&#x6587;&#x4EF6;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7684;classpath&#x8DEF;&#x5F84;&#x3002;</p>
+</li>
+<li><p>script&#xFF1A;(JavaScript&#x5B57;&#x7B26;&#x4E32;&#x811A;&#x672C;)&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h5 id="&#x5728;javascript&#x4E2D;&#x4F7F;&#x7528;java&#x4EE3;&#x7801;&#xFF1A;">&#x5728;JavaScript&#x4E2D;&#x4F7F;&#x7528;java&#x4EE3;&#x7801;&#xFF1A;</h5>
+<blockquote>
+<p>&#x5728;ScriptBaseJob&#x4E2D;&#x6267;&#x884C;&#x7684;JavaScript&#x811A;&#x672C;&#xFF0C;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;java&#x4EE3;&#x7801;&#x4EE5;&#x53CA;java&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6846;&#x67B6;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x4E86;&#x51E0;&#x4E2A;&#x5E38;&#x7528;&#x7684;java&#x5BF9;&#x8C61;&#xFF0C;&#x5206;&#x522B;&#x4E3A;
+applicationContext&#xFF1A;ApplicationContext applicationContext;</p>
+<p>out:System.out</p>
+<p>logger: Logger logger = LoggerFactory.getLogger(ScriptServiceImpl.class)</p>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<p>var script  = applicationContext.getBean(&quot;Script&quot;);</p>
+<p>out.print(&quot;hello&quot;);</p>
+<p>logger.debug(&quot;test&quot;);</p>
+</blockquote>
+<h5 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</h5>
+<blockquote>
+<p>&#x540C;&#x65F6;&#x5FC5;&#x987B;&#x4E14;&#x53EA;&#x80FD;&#x6307;&#x5B9A;&#x4E00;&#x79CD;&#x811A;&#x672C;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;scriptFile(/com/hand/hap/job/sample.js)&#x6216;script&#xFF08;out.println(&quot;123&quot;);&#xFF09;&#xFF0C;scriptName&#x53EF;&#x5199;&#x53EF;&#x4E0D;&#x5199;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5185;&#x7F6E;&#x7684;sendmessagejob&#x7C7B;">&#x5185;&#x7F6E;&#x7684;SendMessageJob&#x7C7B;:</h4>
+<h5 id="&#x529F;&#x80FD;&#x8BF4;&#x660E;&#xFF1A;">&#x529F;&#x80FD;&#x8BF4;&#x660E;&#xFF1A;</h5>
+<blockquote>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x90AE;&#x4EF6;&#x7684;job.</p>
+</blockquote>
+<h5 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;">&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</h5>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x5206;&#x522B;&#x4E3A;</p>
+<ol>
+<li><p>priority&#xFF1A;&#x6D88;&#x606F;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x666E;&#x901A;&#x6216;&#x8005;VIP&#x3002;</p>
+</li>
+<li><p>type&#xFF1A;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x3002;</p>
+</li>
+<li><p>batch&#xFF1A;&#x6279;&#x91CF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;20&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;job&#x7C7B;">&#x81EA;&#x5B9A;&#x4E49;Job&#x7C7B;</h3>
+<p>HAP&#x6846;&#x67B6;&#x4E5F;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;Job&#x7C7B;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x65B0;&#x5EFA;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;&#x8F93;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4EFB;&#x52A1;&#x5168;&#x7C7B;&#x540D;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<h4 id="&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;job&#x7C7B;&#xFF1A;">&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;Job&#x7C7B;&#xFF1A;</h4>
+<blockquote>
+<ol>
+<li><p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x7EE7;&#x627F;AbstractJob&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x5B9E;&#x73B0;&#x5176;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;safeExecute()&#x548C;isRefireImmediatelyWhenException()&#x3002;</p>
+</li>
+<li><p>&#x5728;safeExecute()&#x4E2D;&#x901A;context.getMergedJobDataMap().getString(&quot;&#x53C2;&#x6570;&#x540D;&quot;)<strong>&#x8BBE;&#x7F6E;&#x524D;&#x53F0;&#x9875;&#x9762;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x540D;&#x79F0;</strong>&#x3002;</p>
+</li>
+<li><p>&#x5728;safeExecute()&#x4E2D;&#x5B9A;&#x4E49;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x903B;&#x8F91;&#x3002;</p>
+</li>
+<li><p>&#x5728;safeExecute()&#x4E2D;&#x8C03;&#x7528;&#x81EA;&#x5DF1;&#x7684;Service&#x5904;&#x7406;&#x76F8;&#x5173;&#x7684;&#x4E1A;&#x52A1;&#x3002;</p>
+</li>
+<li><p>setExecutionSummary()&#x53EF;&#x4EE5;<strong>&#x8BB0;&#x5F55;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x6982;&#x8981;</strong>&#xFF0C;&#x6BD4;&#x5982;&#x4EFB;&#x52A1;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6216;&#x4EFB;&#x52A1;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x8BE5;&#x6267;&#x884C;&#x6982;&#x8981;&#x53EF;&#x4EE5;&#x5728;<strong>&#x8BA1;&#x5212;&#x4EFB;&#x52A1;</strong>&#x7684;<strong>&#x6267;&#x884C;&#x8BB0;&#x5F55;</strong>&#x4E2D;&#x770B;&#x5230;&#x3002;</p>
+</li>
+<li><p>isRefireImmediatelyWhenException()&#x8868;&#x793A;&#x4EFB;&#x52A1;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x65F6;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD4;&#x56DE;true&#xFF1A;&#x91CD;&#x65B0;&#x6267;&#x884C;Job&#xFF0C;false&#xFF1A;&#x6302;&#x8D77;Job&#xFF0C;&#x7B49;&#x5F85;&#x7BA1;&#x7406;&#x5458;&#x5904;&#x7406;&#x3002;</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="&#x65B0;&#x5EFA;job&#x7C7B;demo">&#x65B0;&#x5EFA;Job&#x7C7B;Demo</h4>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JobDemo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractJob</span> </span>{
+
+    <span class="hljs-keyword">private</span> Logger logger = LoggerFactory.getLogger(JobDemo.class);
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> IScriptService scriptService;
+    <span class="hljs-keyword">private</span> Exception exception = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Object result;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">safeExecute</span><span class="hljs-params">(JobExecutionContext context)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        String param1 = context.getMergedJobDataMap().getString(<span class="hljs-string">&quot;param1&quot;</span>);
+        String param2 = context.getMergedJobDataMap().getString(<span class="hljs-string">&quot;param2&quot;</span>);
+        Map&lt;String, Object&gt; param = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        param.put(<span class="hljs-string">&quot;param1&quot;</span>, param1);
+        param.put(<span class="hljs-string">&quot;param2&quot;</span>, param2);
+        <span class="hljs-keyword">try</span> {
+            result = scriptService.execute(param1, param2, param);
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            <span class="hljs-keyword">if</span> (logger.isErrorEnabled()) {
+                logger.error(e.getMessage(), e);
+            }
+            exception = e;
+            <span class="hljs-keyword">throw</span> e;
+        }
+        <span class="hljs-keyword">if</span> (exception != <span class="hljs-keyword">null</span>) {
+            setExecutionSummary(exception.getClass().getName() + <span class="hljs-string">&quot;:&quot;</span> + exception.getMessage());
+        } <span class="hljs-keyword">else</span> {
+            setExecutionSummary(<span class="hljs-string">&quot;execute result:&quot;</span> + result);
+        }
+    }
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isRefireImmediatelyWhenException</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+}
+</code></pre>
+<h2 id="&#x6267;&#x884C;&#x8BB0;&#x5F55;">&#x6267;&#x884C;&#x8BB0;&#x5F55;</h2>
+<p>&#x6BCF;&#x5F53;&#x6267;&#x884C;&#x5B8C;&#x4E00;&#x6B21;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x4F1A;&#x5728;&#x6267;&#x884C;&#x8BB0;&#x5F55;&#x91CC;&#x9762;&#x751F;&#x6210;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x6267;&#x884C;&#x8BB0;&#x5F55;&#x91CC;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7684;&#x5177;&#x4F53;&#x6267;&#x884C;&#x4FE1;&#x606F;&#x3002;</p>
+<blockquote>
+<p>&#x89C1;&#x4E0B;&#x56FE;
+<img src="assets/record_job.png" alt=""></p>
+</blockquote>
+<h4 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;">&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</h4>
+<blockquote>
+<ol>
+<li>&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF1A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x540D;&#x79F0;</li>
+<li>&#x4EFB;&#x52A1;&#x7EC4;&#xFF1A;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6240;&#x5C5E;&#x7EC4;&#x522B;</li>
+<li>&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#xFF1A;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x72B6;&#x6001;&#xFF0C;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x5B8C;&#x4E3A;<strong>FINISH</strong>&#xFF0C;&#x6267;&#x884C;&#x51FA;&#x9519;&#x4E3A;<strong>FAILED</strong>&#xFF0C;&#x4EFB;&#x52A1;&#x88AB;&#x7981;&#x6B62;&#x4E3A;<strong>VETOED</strong></li>
+<li>&#x6267;&#x884C;&#x6458;&#x8981;&#xFF1A;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5982;<strong>&#x6267;&#x884C;&#x7ED3;&#x679C;</strong>&#xFF0C;<strong>&#x5F02;&#x5E38;&#x4FE1;&#x606F;</strong>&#x7B49;&#x3002;</li>
+<li>&#x4E0A;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x4E0A;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#x9884;&#x8BA1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+<li>&#x8BA1;&#x5212;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x9884;&#x8BA1;&#x5B8C;&#x6210;&#x4E0A;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6267;&#x884C;&#x95F4;&#x9694;&#x63A8;&#x7B97;&#x7684;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x4E0B;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x9884;&#x8BA1;&#x6267;&#x884C;&#x5B8C;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6267;&#x884C;&#x95F4;&#x9694;&#x63A8;&#x7B97;&#x7684;&#x4E0B;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+<li>&#x5B9E;&#x9645;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1A;&#x672C;&#x6B21;&#x4EFB;&#x52A1;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
+</ol>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="if-manage-introduce.html" class="navigation navigation-prev " aria-label="Previous page: 5.2 接口管理功能描述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="activiti-helper.html" class="navigation navigation-next " aria-label="Next page: 5.4 工作流功能描述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.3 计划任务功能描述","level":"3.1.3","depth":2,"next":{"title":"5.4 工作流功能描述","level":"3.1.4","depth":2,"path":"activiti-helper.md","ref":"activiti-helper.md","articles":[]},"previous":{"title":"5.2 接口管理功能描述","level":"3.1.2","depth":2,"path":"if-manage-introduce.md","ref":"if-manage-introduce.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"family":"Microsoft YaHei","size":1},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Microsoft YaHei","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"HAP Developer Guide","gitbook":"*","description":"HAP Developer Guide"},"file":{"path":"sys-job.md","mtime":"2018-09-04T07:28:33.453Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T10:57:11.176Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
